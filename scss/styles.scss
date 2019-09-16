@@ -35,6 +35,10 @@ body
         padding: 0px 13px;           
         @include vertical-center();
       }
+      input.st-sign
+      {
+        margin-right:15px;
+      }
       input.st-register
       {
         margin-right:15px;
@@ -108,6 +112,7 @@ body
     height:fit-content;
     min-height:260px;
     background-color: #F7F7F7;
+    margin:0px;
     div.st-search-content
     {
       padding:44px 5px;
@@ -122,7 +127,7 @@ body
       }
       p.st-description
       {
-        margin:0px;
+        margin:0px 0px 10px;
         font-size:14px;
       }
       div.st-location 
@@ -133,6 +138,7 @@ body
         height:52px;
         float:left;
         min-width:190px;
+        margin-top:0px;
         input
         {
           width:calc(100% - 60px);
@@ -158,6 +164,7 @@ body
         height:52px;
         float:left;
         min-width:235px;
+        margin:0px;
         
         input
         {
@@ -184,6 +191,8 @@ body
         height:52px;
         float:left;
         min-width:270px;
+        margin:0px;
+    margin:0px;
         
         input
         {
@@ -202,23 +211,34 @@ body
           color:$gray;
         }
       }
-      div.st-search input.st-input
+      div.st-search-btn
       {
-        margin-top:15px;
-        width:10%;
-        position: relative;
-        float:left;
-        border: 4px solid $yellow;
-        height:62px;
-        font-size:20px;
-        color:white;
-        background-color:#006BB8;
+        margin:0px;
+        input.st-input
+        {
+          width:10%;
+          position: relative;
+          float:left;
+          border: 4px solid $yellow;
+          height:62px;
+          font-size:20px;
+          color:white;
+          background-color:#006BB8;
+          min-width:75px;
+          overflow:hidden;
+        }
       }
       div.st-bussiness
       {
         float:left;
+        width:100%;
         position:relative;
         margin-top:15px;
+        input 
+        {
+          height:20px;
+          width: 20px;
+        }
       }
     }
   }

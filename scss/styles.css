@@ -40,6 +40,10 @@ body div.st-header div.st-top input.st-button {
   transform: translateY(-50%);
 }
 
+body div.st-header div.st-top input.st-sign {
+  margin-right: 15px;
+}
+
 body div.st-header div.st-top input.st-register {
   margin-right: 15px;
   padding: 0px 10px;
@@ -120,6 +124,7 @@ body div.st-search {
   height: fit-content;
   min-height: 260px;
   background-color: #F7F7F7;
+  margin: 0px;
 }
 
 body div.st-search div.st-search-content {
@@ -136,7 +141,7 @@ body div.st-search div.st-search-content p.st-important {
 }
 
 body div.st-search div.st-search-content p.st-description {
-  margin: 0px;
+  margin: 0px 0px 10px;
   font-size: 14px;
 }
 
@@ -147,6 +152,7 @@ body div.st-search div.st-search-content div.st-location {
   height: 52px;
   float: left;
   min-width: 190px;
+  margin-top: 0px;
 }
 
 body div.st-search div.st-search-content div.st-location input {
@@ -172,6 +178,7 @@ body div.st-search div.st-search-content div.st-date {
   height: 52px;
   float: left;
   min-width: 235px;
+  margin: 0px;
 }
 
 body div.st-search div.st-search-content div.st-date input {
@@ -197,6 +204,8 @@ body div.st-search div.st-search-content div.st-count {
   height: 52px;
   float: left;
   min-width: 270px;
+  margin: 0px;
+  margin: 0px;
 }
 
 body div.st-search div.st-search-content div.st-count input {
@@ -215,8 +224,11 @@ body div.st-search div.st-search-content div.st-count i {
   color: #BDBDBD;
 }
 
-body div.st-search div.st-search-content div.st-search input.st-input {
-  margin-top: 15px;
+body div.st-search div.st-search-content div.st-search-btn {
+  margin: 0px;
+}
+
+body div.st-search div.st-search-content div.st-search-btn input.st-input {
   width: 10%;
   position: relative;
   float: left;
@@ -225,11 +237,19 @@ body div.st-search div.st-search-content div.st-search input.st-input {
   font-size: 20px;
   color: white;
   background-color: #006BB8;
+  min-width: 75px;
+  overflow: hidden;
 }
 
 body div.st-search div.st-search-content div.st-bussiness {
   float: left;
+  width: 100%;
   position: relative;
   margin-top: 15px;
+}
+
+body div.st-search div.st-search-content div.st-bussiness input {
+  height: 20px;
+  width: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
