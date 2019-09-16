@@ -1,0 +1,235 @@
+body {
+  font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  min-width: 400px;
+  margin: 0px;
+  padding: 0px;
+}
+
+body div.st-header {
+  background-color: #003580;
+}
+
+body div.st-header div.st-top {
+  max-width: 1110px;
+  margin: 0px auto;
+  height: 50px;
+}
+
+body div.st-header div.st-top img.st-logo {
+  width: 150px;
+  height: 25px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+body div.st-header div.st-top input.st-button {
+  height: 30px;
+  border: 0px;
+  background-color: white;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 30px;
+  float: right;
+  font-size: 12px;
+  padding: 0px 13px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+body div.st-header div.st-top input.st-register {
+  margin-right: 15px;
+  padding: 0px 10px;
+  font-weight: 700;
+}
+
+body div.st-header div.st-top input.st-import {
+  float: right;
+  background-color: #003580;
+  border: 1px solid white;
+  color: white;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-right: 15px;
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 8px 11px;
+  font-weight: 700;
+}
+
+body div.st-header div.st-top img.st-flag {
+  float: right;
+  margin-right: 26px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 18px;
+}
+
+body div.st-header div.st-top span.st-currency {
+  color: white;
+  margin-right: 34px;
+  font-size: 12px;
+  float: right;
+  font-weight: 700;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+body div.st-header div.st-bottom {
+  max-width: 1110px;
+  margin: 0px auto;
+  min-height: 60px;
+}
+
+body div.st-header div.st-bottom span.st-unselected {
+  color: #838383;
+}
+
+body div.st-header div.st-bottom span.st-selected {
+  border-bottom: 2px solid white;
+}
+
+body div.st-header div.st-bottom span {
+  color: white;
+  font-size: 13px;
+  line-height: 55px;
+  margin: 0 16px;
+  display: inline-block;
+  min-height: 56px;
+  padding: auto;
+}
+
+body div.st-header div.st-bottom span i {
+  font-size: 25px;
+  margin-right: 5px;
+  color: white;
+}
+
+body div.st-search {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 260px;
+  background-color: #F7F7F7;
+}
+
+body div.st-search div.st-search-content {
+  padding: 44px 5px;
+  margin: 0px auto;
+  width: calc(100% - 10px);
+  max-width: 1100px;
+}
+
+body div.st-search div.st-search-content p.st-important {
+  font-size: 24px;
+  margin: 0px;
+  font-weight: 600;
+}
+
+body div.st-search div.st-search-content p.st-description {
+  margin: 0px;
+  font-size: 14px;
+}
+
+body div.st-search div.st-search-content div.st-location {
+  margin-top: 15px;
+  position: relative;
+  width: 39%;
+  height: 52px;
+  float: left;
+  min-width: 190px;
+}
+
+body div.st-search div.st-search-content div.st-location input {
+  width: calc(100% - 60px);
+  height: 100%;
+  padding-left: 60px;
+  border: 4px solid #FEBB02;
+  font-size: 14px;
+}
+
+body div.st-search div.st-search-content div.st-location i {
+  position: absolute;
+  top: 18px;
+  font-size: 25px;
+  left: 18px;
+  color: #BDBDBD;
+}
+
+body div.st-search div.st-search-content div.st-date {
+  margin-top: 15px;
+  position: relative;
+  width: 24%;
+  height: 52px;
+  float: left;
+  min-width: 235px;
+}
+
+body div.st-search div.st-search-content div.st-date input {
+  width: calc(100% - 60px);
+  height: 100%;
+  padding-left: 60px;
+  border: 4px solid #FEBB02;
+  font-size: 14px;
+}
+
+body div.st-search div.st-search-content div.st-date i {
+  position: absolute;
+  top: 18px;
+  font-size: 25px;
+  left: 24px;
+  color: #BDBDBD;
+}
+
+body div.st-search div.st-search-content div.st-count {
+  margin-top: 15px;
+  position: relative;
+  width: 26%;
+  height: 52px;
+  float: left;
+  min-width: 270px;
+}
+
+body div.st-search div.st-search-content div.st-count input {
+  width: calc(100% - 60px);
+  height: 100%;
+  padding-left: 60px;
+  border: 4px solid #FEBB02;
+  font-size: 14px;
+}
+
+body div.st-search div.st-search-content div.st-count i {
+  position: absolute;
+  top: 18px;
+  font-size: 25px;
+  left: 24px;
+  color: #BDBDBD;
+}
+
+body div.st-search div.st-search-content div.st-search input.st-input {
+  margin-top: 15px;
+  width: 10%;
+  position: relative;
+  float: left;
+  border: 4px solid #FEBB02;
+  height: 62px;
+  font-size: 20px;
+  color: white;
+  background-color: #006BB8;
+}
+
+body div.st-search div.st-search-content div.st-bussiness {
+  float: left;
+  position: relative;
+  margin-top: 15px;
+}
+/*# sourceMappingURL=styles.css.map */

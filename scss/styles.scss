@@ -1,0 +1,225 @@
+@import "colors.scss";
+@import "mixins.scss";
+
+body
+{
+  font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  min-width: 400px;
+  margin: 0px;
+  padding: 0px;
+  div.st-header
+  {
+    background-color: $blue;
+
+    div.st-top
+    {
+      max-width:1110px;
+      margin:0px auto;
+      height:50px;
+      img.st-logo
+      {
+        width:150px;
+        height:25px;
+        @include vertical-center();
+      }
+      input.st-button
+      {
+        height:30px;
+        border:0px;
+        background-color: white;
+        border-radius:3px;
+        text-align:center;
+        line-height: 30px;
+        float: right;
+        font-size:12px;
+        padding: 0px 13px;           
+        @include vertical-center();
+      }
+      input.st-register
+      {
+        margin-right:15px;
+        padding: 0px 10px;                                               
+        font-weight: 700;
+      }
+      input.st-import
+      {
+        float:right;
+        background-color:$blue;
+        border: 1px solid white;
+        color:white;
+        @include vertical-center();
+        margin-right:15px;
+        border-radius: 3px;
+        font-size:12px;
+        padding:8px 11px;
+        font-weight: 700;
+      }
+      img.st-flag
+      {
+        float:right;
+        margin-right:26px;
+        @include vertical-center();
+        height:18px;
+      }
+      span.st-currency
+      {
+        color:white;
+        margin-right:34px;
+        font-size:12px;
+        float:right;
+        font-weight: 700;
+        @include vertical-center();
+      }
+    }
+    div.st-bottom
+    {
+      max-width:1110px;
+      margin:0px auto;
+      min-height:60px;
+      span.st-unselected
+      {
+       color: #838383;
+      }
+      span.st-selected
+      {
+        border-bottom:2px solid white;
+      }
+      span
+      {
+        color:white;
+        font-size:13px;
+        line-height: 55px;
+        margin:0 16px;
+        display:inline-block;
+        min-height:56px;
+        padding:auto;
+       
+        i 
+        {
+          font-size:25px;
+          margin-right:5px;
+          color:white;
+        }
+      }
+    }
+  }
+  div.st-search
+  {
+    height:fit-content;
+    min-height:260px;
+    background-color: #F7F7F7;
+    div.st-search-content
+    {
+      padding:44px 5px;
+      margin:0px auto;
+      width:calc(100% - 10px);
+      max-width:1100px;
+      p.st-important 
+      {
+        font-size:24px;
+        margin:0px;
+        font-weight:600;
+      }
+      p.st-description
+      {
+        margin:0px;
+        font-size:14px;
+      }
+      div.st-location 
+      {
+        margin-top:15px;
+        position: relative;
+        width:39%;
+        height:52px;
+        float:left;
+        min-width:190px;
+        input
+        {
+          width:calc(100% - 60px);
+          height:100%;
+          padding-left:60px;
+          border: 4px solid $yellow;
+          font-size:14px;
+        }
+        i
+        {
+          position:absolute;
+          top:18px;    
+          font-size: 25px;
+          left: 18px;
+          color:$gray;
+        }
+      }
+      div.st-date
+      {
+        margin-top:15px;
+        position: relative;
+        width:24%;
+        height:52px;
+        float:left;
+        min-width:235px;
+        
+        input
+        {
+          width:calc(100% - 60px);
+          height:100%;
+          padding-left:60px;
+          border: 4px solid $yellow;
+          font-size:14px;
+        }
+        i
+        {
+          position:absolute;
+          top:18px;    
+          font-size: 25px;
+          left: 24px;
+          color:$gray;
+        }
+      }
+      div.st-count
+      {
+        margin-top:15px;
+        position: relative;
+        width:26%;
+        height:52px;
+        float:left;
+        min-width:270px;
+        
+        input
+        {
+          width:calc(100% - 60px);
+          height:100%;
+          padding-left:60px;
+          border: 4px solid $yellow;
+          font-size:14px;
+        }
+        i
+        {
+          position:absolute;
+          top:18px;    
+          font-size: 25px;
+          left: 24px;
+          color:$gray;
+        }
+      }
+      div.st-search input.st-input
+      {
+        margin-top:15px;
+        width:10%;
+        position: relative;
+        float:left;
+        border: 4px solid $yellow;
+        height:62px;
+        font-size:20px;
+        color:white;
+        background-color:#006BB8;
+      }
+      div.st-bussiness
+      {
+        float:left;
+        position:relative;
+        margin-top:15px;
+      }
+    }
+  }
+}
