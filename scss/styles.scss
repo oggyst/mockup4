@@ -118,6 +118,7 @@ body
       padding:44px 5px;
       margin:0px auto;
       width:calc(100% - 10px);
+      border-collapse: separate;
       max-width:1100px;
       p.st-important 
       {
@@ -139,6 +140,7 @@ body
         float:left;
         min-width:190px;
         margin-top:0px;
+        margin-bottom: 10px;
         input
         {
           width:calc(100% - 60px);
@@ -165,6 +167,7 @@ body
         float:left;
         min-width:235px;
         margin:0px;
+        margin-bottom: 10px;
         
         input
         {
@@ -192,7 +195,7 @@ body
         float:left;
         min-width:270px;
         margin:0px;
-    margin:0px;
+        margin-bottom: 10px;
         
         input
         {
@@ -214,6 +217,7 @@ body
       div.st-search-btn
       {
         margin:0px;
+        margin-bottom: 10px;
         input.st-input
         {
           width:10%;
@@ -239,6 +243,111 @@ body
           height:20px;
           width: 20px;
         }
+      }
+    }
+  }
+  div.st-special-offer
+  {
+    width:calc(100% - 30px);
+    max-width: 1100px;
+    margin:60px auto 24px;
+    border: 1px solid $border-gray;
+    height:155px;
+    position:relative;
+    @include break-point(1100px)
+    {
+      margin: 60px 10px 24px;
+    }
+    img{
+      top:24px;
+      left:24px;
+      position:absolute;
+    }
+    p.st-bold
+    {
+      font-weight:700;
+      position:absolute;
+      left: 138px;
+      top:5px;
+      font-size:16px;
+    }
+    p.st-description
+    {
+      position: absolute;
+      width:calc(100% - 150px);
+      left:138px;
+      color:$text-gray;
+      top:37px;
+      font-size:14px;
+      @include text-overflow();
+    }
+    input 
+    {
+      color:$blue-button;
+      background-color:white;
+      font-weight:900;
+      font-size:14px;
+      border: 1px solid $blue-button;
+      padding:8px 16px;
+      position:absolute;
+      left:138px;
+      top:89px;
+    }
+    i 
+    {
+      position:absolute;
+      right:26px;
+      top:26px;
+      font-size:25px;
+    }
+  }
+  div.st-images
+  {
+    width:calc(100% - 30px);
+    max-width: 1100px;
+    margin:60px auto 24px;
+    position:relative;
+    @include break-point(1100px)
+    {
+      margin: 60px 10px 24px;
+    }
+    div.st-image-holder
+    {
+      position:relative;
+      img.st-zlatibor
+      {
+        width:calc(50% - 16px);
+        padding-right: 8px;
+      }
+      p.st-title
+      {
+        position:absolute;
+        top:25px;
+        left:25px;
+        margin:0px;
+        color:white;
+        font-size: 28px;
+        font-weight:700;
+        text-shadow: 1px 1px black;
+        img 
+        {
+          top:10px;
+          position:absolute;
+          margin-left:5px;
+        }
+      }
+      p.st-objects
+      {
+        position:absolute;
+        color:white;
+        top:43px;
+        left:25px;
+        span 
+        {
+          font-weight:700;
+          text-shadow: 1px 1px black;
+        }
+
       }
     }
   }

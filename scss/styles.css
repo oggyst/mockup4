@@ -131,6 +131,7 @@ body div.st-search div.st-search-content {
   padding: 44px 5px;
   margin: 0px auto;
   width: calc(100% - 10px);
+  border-collapse: separate;
   max-width: 1100px;
 }
 
@@ -153,6 +154,7 @@ body div.st-search div.st-search-content div.st-location {
   float: left;
   min-width: 190px;
   margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 body div.st-search div.st-search-content div.st-location input {
@@ -179,6 +181,7 @@ body div.st-search div.st-search-content div.st-date {
   float: left;
   min-width: 235px;
   margin: 0px;
+  margin-bottom: 10px;
 }
 
 body div.st-search div.st-search-content div.st-date input {
@@ -205,7 +208,7 @@ body div.st-search div.st-search-content div.st-count {
   float: left;
   min-width: 270px;
   margin: 0px;
-  margin: 0px;
+  margin-bottom: 10px;
 }
 
 body div.st-search div.st-search-content div.st-count input {
@@ -226,6 +229,7 @@ body div.st-search div.st-search-content div.st-count i {
 
 body div.st-search div.st-search-content div.st-search-btn {
   margin: 0px;
+  margin-bottom: 10px;
 }
 
 body div.st-search div.st-search-content div.st-search-btn input.st-input {
@@ -251,5 +255,129 @@ body div.st-search div.st-search-content div.st-bussiness {
 body div.st-search div.st-search-content div.st-bussiness input {
   height: 20px;
   width: 20px;
+}
+
+body div.st-special-offer {
+  width: calc(100% - 30px);
+  max-width: 1100px;
+  margin: 60px auto 24px;
+  border: 1px solid #e0e0e0;
+  height: 155px;
+  position: relative;
+}
+
+@media (max-width: 1100px) {
+  body div.st-special-offer {
+    margin: 60px 10px 24px;
+  }
+}
+
+body div.st-special-offer img {
+  top: 24px;
+  left: 24px;
+  position: absolute;
+}
+
+body div.st-special-offer p.st-bold {
+  font-weight: 700;
+  position: absolute;
+  left: 138px;
+  top: 5px;
+  font-size: 16px;
+}
+
+body div.st-special-offer p.st-description {
+  position: absolute;
+  width: calc(100% - 150px);
+  left: 138px;
+  color: #383838;
+  top: 37px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  z-index: 3;
+}
+
+body div.st-special-offer p.st-description:hover {
+  border: 1px solid #eee;
+  padding: 2px;
+  white-space: normal;
+  word-break: break-word;
+  z-index: 5;
+  background-color: #eee;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body div.st-special-offer input {
+  color: #248AD4;
+  background-color: white;
+  font-weight: 900;
+  font-size: 14px;
+  border: 1px solid #248AD4;
+  padding: 8px 16px;
+  position: absolute;
+  left: 138px;
+  top: 89px;
+}
+
+body div.st-special-offer i {
+  position: absolute;
+  right: 26px;
+  top: 26px;
+  font-size: 25px;
+}
+
+body div.st-images {
+  width: calc(100% - 30px);
+  max-width: 1100px;
+  margin: 60px auto 24px;
+  position: relative;
+}
+
+@media (max-width: 1100px) {
+  body div.st-images {
+    margin: 60px 10px 24px;
+  }
+}
+
+body div.st-images div.st-image-holder {
+  position: relative;
+}
+
+body div.st-images div.st-image-holder img.st-zlatibor {
+  width: calc(50% - 16px);
+  padding-right: 8px;
+}
+
+body div.st-images div.st-image-holder p.st-title {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  margin: 0px;
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  text-shadow: 1px 1px black;
+}
+
+body div.st-images div.st-image-holder p.st-title img {
+  top: 10px;
+  position: absolute;
+  margin-left: 5px;
+}
+
+body div.st-images div.st-image-holder p.st-objects {
+  position: absolute;
+  color: white;
+  top: 43px;
+  left: 25px;
+}
+
+body div.st-images div.st-image-holder p.st-objects span {
+  font-weight: 700;
+  text-shadow: 1px 1px black;
 }
 /*# sourceMappingURL=styles.css.map */
