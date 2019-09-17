@@ -3,6 +3,7 @@ body {
   min-width: 400px;
   margin: 0px;
   padding: 0px;
+  padding-bottom: 500px;
 }
 
 body div.st-header {
@@ -344,15 +345,24 @@ body div.st-images {
 }
 
 body div.st-images div.st-image-holder {
+  width: 100%;
+  max-width: 1100px;
   position: relative;
+  float: left;
 }
 
-body div.st-images div.st-image-holder img.st-zlatibor {
-  width: calc(50% - 16px);
-  padding-right: 8px;
+body div.st-images div.st-image-holder div.st-first {
+  width: calc(50% - 4px);
+  margin-right: 8px;
 }
 
-body div.st-images div.st-image-holder p.st-title {
+body div.st-images div.st-image-holder div.st-first img.st-sankt {
+  width: 100%;
+  float: left;
+  border-radius: 5px;
+}
+
+body div.st-images div.st-image-holder div.st-first p.st-title {
   position: absolute;
   top: 25px;
   left: 25px;
@@ -363,21 +373,97 @@ body div.st-images div.st-image-holder p.st-title {
   text-shadow: 1px 1px black;
 }
 
-body div.st-images div.st-image-holder p.st-title img {
+body div.st-images div.st-image-holder div.st-first p.st-title img {
   top: 10px;
   position: absolute;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
-body div.st-images div.st-image-holder p.st-objects {
+body div.st-images div.st-image-holder div.st-first p.st-objects {
   position: absolute;
   color: white;
-  top: 43px;
+  top: 49px;
   left: 25px;
 }
 
-body div.st-images div.st-image-holder p.st-objects span {
+body div.st-images div.st-image-holder div.st-first p.st-objects span {
   font-weight: 700;
   text-shadow: 1px 1px black;
+}
+
+body div.st-images div.st-image-holder div.st-first p.st-check {
+  background-color: #e9f0fa;
+  margin: 0px;
+  position: absolute;
+  width: calc(50% - 14px);
+  bottom: 41px;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 0px 5px;
+}
+
+body div.st-images div.st-image-holder div.st-first p.st-suggestion {
+  background-color: white;
+  position: absolute;
+  width: calc(50% - 98px);
+  bottom: 4px;
+  margin: 0px;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #e9f0fa;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-weight: 400;
+  padding: 10px 87px 5px 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+body div.st-images div.st-image-holder div.st-first p.st-suggestion span.st-date {
+  color: blue;
+  text-decoration: underline;
+  float: left;
+}
+
+body div.st-images div.st-image-holder div.st-first i {
+  position: absolute;
+  left: calc(50% - 30px);
+  bottom: 12px;
+  color: blue;
+}
+
+body div.st-images div.st-image-holder div.st-second {
+  float: left;
+  width: calc(50% - 4px);
+  margin-left: 8px;
+}
+
+body div.st-images div.st-image-holder div.st-second img.st-moskva {
+  border-radius: 5px;
+  width: 100%;
+}
+
+body div.st-images div.st-image-holder div.st-second p.st-title {
+  position: absolute;
+  top: 25px;
+  left: calc(50% + 25px);
+  margin: 0px;
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  text-shadow: 1px 1px black;
+}
+
+body div.st-images div.st-image-holder div.st-second p.st-title img {
+  top: 10px;
+  position: absolute;
+  margin-left: 10px;
+}
+
+body div.st-images div.st-image-holder div.st-second p.st-objects {
+  position: absolute;
+  color: white;
+  top: 49px;
+  left: calc(50% + 25px);
 }
 /*# sourceMappingURL=styles.css.map */

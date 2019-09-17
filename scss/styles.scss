@@ -7,6 +7,7 @@ body
   min-width: 400px;
   margin: 0px;
   padding: 0px;
+  padding-bottom: 500px;
   div.st-header
   {
     background-color: $blue;
@@ -313,41 +314,125 @@ body
     }
     div.st-image-holder
     {
+      width:100%;
+      max-width: 1100px;
       position:relative;
-      img.st-zlatibor
+      float:left;
+      div.st-first 
       {
-        width:calc(50% - 16px);
-        padding-right: 8px;
-      }
-      p.st-title
-      {
-        position:absolute;
-        top:25px;
-        left:25px;
-        margin:0px;
-        color:white;
-        font-size: 28px;
-        font-weight:700;
-        text-shadow: 1px 1px black;
-        img 
+        width:calc(50% - 4px);
+        margin-right: 8px;
+        img.st-sankt
         {
-          top:10px;
-          position:absolute;
-          margin-left:5px;
+          width:100%;
+          float:left;
+          border-radius: 5px;
         }
-      }
-      p.st-objects
-      {
-        position:absolute;
-        color:white;
-        top:43px;
-        left:25px;
-        span 
+        p.st-title
         {
+          position:absolute;
+          top:25px;
+          left:25px;
+          margin:0px;
+          color:white;
+          font-size: 28px;
           font-weight:700;
           text-shadow: 1px 1px black;
+          img 
+          {
+            top:10px;
+            position:absolute;
+            margin-left:10px;
+          }
         }
+        p.st-objects
+        {
+          position:absolute;
+          color:white;
+          top:49px;
+          left:25px;
+          span 
+          {
+            font-weight:700;
+            text-shadow: 1px 1px black;
+          }
 
+        }
+        p.st-check
+        {
+          background-color:#e9f0fa;
+          margin:0px;
+          position: absolute;
+          width:calc(50% - 14px);
+          bottom:41px;
+          font-weight:700;
+          font-size:14px;
+          padding: 0px 5px;
+        }
+        p.st-suggestion
+        {
+          background-color:white;
+          position: absolute;
+          width:calc(50% - 98px);
+          bottom:4px;
+          margin:0px;
+          height:20px;
+          line-height: 20px;
+          border:1px solid #e9f0fa;
+          border-bottom-left-radius: 3px;
+          border-bottom-right-radius: 3px;
+          font-weight:400;
+          padding: 10px 87px 5px 5px;
+          font-size:14px;
+          text-align:center;
+          span.st-date
+          {
+            color:blue;
+            text-decoration:underline;
+            float:left;
+          }
+        }
+        i 
+          {
+            position:absolute;
+            left: calc(50% - 30px);
+            bottom: 12px;
+            color:blue;
+          }
+      }
+      div.st-second
+      {
+        float:left;
+        width:calc(50% - 4px);
+        margin-left: 8px;
+        img.st-moskva {
+          border-radius: 5px;
+          width:100%;
+        }
+        p.st-title
+        {
+          position:absolute;
+          top:25px;
+          left:calc(50% + 25px);
+          margin:0px;
+          color:white;
+          font-size: 28px;
+          font-weight:700;
+          text-shadow: 1px 1px black;
+          img 
+          {
+            top:10px;
+            position:absolute;
+            margin-left:10px;
+          }
+        }
+        p.st-objects
+        {
+          position:absolute;
+          color:white;
+          top:49px;
+          left:calc(50% + 25px);
+        }
       }
     }
   }
