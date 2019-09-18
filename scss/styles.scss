@@ -7,7 +7,7 @@ body
   min-width: 400px;
   margin: 0px;
   padding: 0px;
-  padding-bottom: 500px;
+  padding-bottom:1000px;
   div.st-header
   {
     background-color: $blue;
@@ -58,6 +58,10 @@ body
         font-size:12px;
         padding:8px 11px;
         font-weight: 700;
+        @include break-point(650px)
+        {
+          display:none;
+        }
       }
       img.st-flag
       {
@@ -316,18 +320,18 @@ body
     {
       width:100%;
       max-width: 1100px;
+      min-width: 650px;
       position:relative;
       float:left;
       div.st-first 
       {
-        width:calc(50% - 4px);
-        margin-right: 8px;
-        img.st-sankt
-        {
-          width:100%;
-          float:left;
-          border-radius: 5px;
-        }
+        width:calc(50% - 10px);
+        background: url(/img/peterburg.jpg);
+        margin-right: 10px; 
+        height: 340px;
+        float:left;
+        border-radius: 5px;
+       
         p.st-title
         {
           position:absolute;
@@ -338,6 +342,7 @@ body
           font-size: 28px;
           font-weight:700;
           text-shadow: 1px 1px black;
+          width:calc(50% - 62px);
           img 
           {
             top:10px;
@@ -350,7 +355,9 @@ body
           position:absolute;
           color:white;
           top:49px;
+          width:calc(50% - 32px);
           left:25px;
+          text-shadow:1px 1px black;
           span 
           {
             font-weight:700;
@@ -363,18 +370,22 @@ body
           background-color:#e9f0fa;
           margin:0px;
           position: absolute;
-          width:calc(50% - 14px);
-          bottom:41px;
+          width:calc(50% - 20px);
+          bottom:37px;
           font-weight:700;
           font-size:14px;
           padding: 0px 5px;
         }
-        p.st-suggestion
+        div.st-suggestion
         {
+          display: grid;
+          grid-template-columns: 1fr 2fr 1fr;
+          grid-gap: 5px;
           background-color:white;
           position: absolute;
-          width:calc(50% - 98px);
-          bottom:4px;
+          width:calc(50% - 22px);
+          padding:10px 5px 5px;
+          bottom:0px;
           margin:0px;
           height:20px;
           line-height: 20px;
@@ -382,43 +393,61 @@ body
           border-bottom-left-radius: 3px;
           border-bottom-right-radius: 3px;
           font-weight:400;
-          padding: 10px 87px 5px 5px;
           font-size:14px;
           text-align:center;
-          span.st-date
+          p.st-date
           {
+            margin:0px;
+            text-align: left;
             color:blue;
-            text-decoration:underline;
-            float:left;
+            text-decoration: underline;
+            min-width: 87px
+          }
+          p.st-room
+          {
+            margin:0px;
+            text-align:center;
+            font-size:14px;
+            min-width: 150px;
+          }
+          i 
+          {
+            text-align: right;
+            color:blue;
           }
         }
-        i 
-          {
-            position:absolute;
-            left: calc(50% - 30px);
-            bottom: 12px;
-            color:blue;
-          }
+        div.st-icon-holder
+        {
+          position:absolute;
+          right:calc(50% + 20px);
+          top:10px;
+          color:white;
+        }
       }
       div.st-second
       {
         float:left;
-        width:calc(50% - 4px);
-        margin-left: 8px;
-        img.st-moskva {
-          border-radius: 5px;
-          width:100%;
+        width:calc(50% - 10px);
+        margin-left: 10px;
+        border-radius: 5px;
+        height: 340px;
+        background: url(/img/moskva.png);
+        img.st-icon
+        {
+          width:28px;
+          height:28px;
         }
         p.st-title
         {
           position:absolute;
           top:25px;
-          left:calc(50% + 25px);
+          left:calc(50% + 27px);
           margin:0px;
           color:white;
           font-size: 28px;
           font-weight:700;
           text-shadow: 1px 1px black;
+          width:calc(50% - 62px);
           img 
           {
             top:10px;
@@ -431,9 +460,185 @@ body
           position:absolute;
           color:white;
           top:49px;
-          left:calc(50% + 25px);
+          left:calc(50% + 27px);
+          width:calc(50% - 32px);
+          text-shadow:1px 1px black;
+        }
+        p.st-average-price
+        {
+          background-color:$black;    
+          margin: 0px;
+          width: 76px;
+          font-size: 12px;
+          position: absolute;
+          right: 15px;
+          bottom: 15px;
+          padding:4px 6px;
+          border-radius: 3px;
+          text-align:right;
+          color:white;
+          span.st-price
+          {
+            font-size:16px;
+          }
+        }
+        div.st-icon-holder
+        {
+          position:absolute;
+          right:20px;
+          color:white;
+          top:10px;
         }
       }
+    }
+  div.st-second-row
+    {
+      width: 100%;
+      max-width: 1100px;
+      min-width: 670px;
+      display:grid;
+      float:left;
+      margin:15px 0 40px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap:15px;
+      position:relative;
+      height:272px;
+        div.st-image
+        {
+          img.st-icon
+          {
+            width:28px;
+            height:28px;
+          }
+          position:relative;
+          p.st-title
+          {
+            position:absolute;
+            top:25px;
+            left:25px;
+            margin:0px;
+            color:white;
+            font-size: 28px;
+            font-weight:700;
+            text-shadow: 1px 1px black;
+            img
+            {
+              height:18px;
+              width:18px;
+            }
+          }
+          p.st-objects-number
+          {
+            position: absolute;
+            left: 25px;
+            top: 45px;
+            text-shadow: 1px 1px black;
+            color: white;
+            font-size: 16px;
+          }
+          p.st-price
+          {
+          background-color:$black;    
+          margin: 0px;
+          width: 85px;
+          font-size: 12px;
+          position: absolute;
+          right: 15px;
+          bottom: 15px;
+          padding:4px 6px;
+          border-radius: 3px;
+          text-align:right;
+          color:white;
+          span
+          {
+            font-size:16px;
+          }
+         }
+         i 
+         {
+           color:white;
+           position: absolute;
+           right:15px;
+           top:15px;
+         }
+        }
+        div.st-first 
+        {
+          background: url(/img/kiev.jpg);
+        }
+        div.st-second
+        {
+          background: url(/img/riga.jpg)
+        }
+        div.st-third
+        {
+          background: url(/img/helsinki.jpg);
+        }
+      }
+  }
+  div.st-accommodation
+  {
+    max-width:1100px;
+    width:100%;
+    margin: 0px auto;
+    p.st-title
+    {
+      font-size:24px;
+      color:$black;
+      float:left;
+      font-weight:700;
+      margin:0px 0px 16px;
+    }
+    div.st-sorts
+    {
+      display:grid;
+      grid-template-columns: repeat(5, 1fr);
+      height:300px;
+      grid-gap:16px;
+      float:left;
+      width:100%;
+      // div.st-apartments
+      // {
+      //   background: url(/img/apartments.png);
+      // }
+      // div.st-resorts
+      // {
+      //   background: url(/img/resorts.png);
+      // }
+      // div.st-villas
+      // {
+      //   background: url(/img/villas.png);
+      // }
+      // div.st-cabins
+      // {
+      //   background: url(/img/cabins.png);
+      // }
+      // div.st-cottages
+      // {
+      //   background: url(/img/cottages.jpg);
+      // }
+      div.st-type
+      {
+       img 
+       {
+         height:207px;
+         width:100%;
+       }
+       p.st-type
+       {
+         font-size:16px;
+         font-weight: 700;
+         margin:16px 0 0;
+       }
+       p.st-ammount
+       {
+         color:#707070;
+         font-size:12px;
+         margin:0 0 16px;
+       }
+
+      }
+      
     }
   }
 }
