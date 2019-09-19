@@ -436,6 +436,7 @@ body
         {
           width:28px;
           height:28px;
+          border-top-left-radius: 5px;
         }
         p.st-title
         {
@@ -505,12 +506,14 @@ body
       height:272px;
         div.st-image
         {
+          position:relative;
+          border-radius:5px;
           img.st-icon
           {
             width:28px;
             height:28px;
+            border-top-left-radius: 5px;
           }
-          position:relative;
           p.st-title
           {
             position:absolute;
@@ -597,32 +600,13 @@ body
       grid-gap:16px;
       float:left;
       width:100%;
-      // div.st-apartments
-      // {
-      //   background: url(/img/apartments.png);
-      // }
-      // div.st-resorts
-      // {
-      //   background: url(/img/resorts.png);
-      // }
-      // div.st-villas
-      // {
-      //   background: url(/img/villas.png);
-      // }
-      // div.st-cabins
-      // {
-      //   background: url(/img/cabins.png);
-      // }
-      // div.st-cottages
-      // {
-      //   background: url(/img/cottages.jpg);
-      // }
       div.st-type
       {
        img 
        {
          height:207px;
          width:100%;
+         border-radius: 5px;
        }
        p.st-type
        {
@@ -639,6 +623,99 @@ body
 
       }
       
+    }
+    div.st-private-rooms
+    {
+      p.st-title
+      {
+        font-size:24px;
+      }
+      div.st-offers
+      {
+        max-width: 1100px;
+        width:100%;
+        height:356px;
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        position: relative;
+        grid-gap:16px;
+        div
+        {
+          position: relative;
+          min-width:0;
+        
+     img 
+     {
+       max-width:100%;
+       height:240px;
+     }
+     p.st-name
+     {
+       color:$text-gray;
+       margin: 8px 0 0 0;
+       max-width:100%;
+       font-size:14px;
+       position: absolute;
+       @include text-overflow();
+     }
+     p.st-location
+     {
+       color:#707070;
+       font-size:14px;
+       margin:0;
+       position: absolute;
+       top:267px;
+     }
+     p.st-price
+     {
+       margin: 8px 0 0;
+       font-size:14px;
+       position: absolute;
+       top:279px;
+       font-weight: 600;
+     }
+     p.st-score
+     {
+
+       top: 296px;
+       position: absolute;
+       span.st-mark
+       {
+       background-color: $mark-blue;
+       color:white;
+       padding:4px;
+       border-radius: 6px 6px 6px 0px;
+       font-size:14px;
+       font-weight: 500;
+       }
+       span.st-desc
+       {
+         color:$mark-blue;
+         font-size:14px;
+         font-weight: 500;
+       }
+       span.st-rec-num
+       {
+        color: #707070;
+        height: 40px;
+        position: absolute;
+        display: block;
+        width: 100%;
+        bottom: -24px;
+        left: 80px;
+        text-align: right;
+        font-size: 12px;
+        @include break-point(744px)
+        {
+          bottom: -14px;
+          width:50px;
+          text-align: left;
+          left: 95px;
+        }
+       }
+     }
+    }
+  }
     }
   }
 }
