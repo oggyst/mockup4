@@ -1,721 +1,766 @@
 @import "colors.scss";
 @import "mixins.scss";
 
-body
-{
-  font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+body {
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   min-width: 400px;
   margin: 0px;
   padding: 0px;
-  padding-bottom:1000px;
-  div.st-header
-  {
+  padding-bottom: 1000px;
+  div.st-header {
     background-color: $blue;
 
-    div.st-top
-    {
-      max-width:1110px;
-      margin:0px auto;
-      height:50px;
-      img.st-logo
-      {
-        width:150px;
-        height:25px;
+    div.st-top {
+      max-width: 1110px;
+      margin: 0px auto;
+      height: 50px;
+      img.st-logo {
+        width: 150px;
+        height: 25px;
         @include vertical-center();
       }
-      input.st-button
-      {
-        height:30px;
-        border:0px;
+      input.st-button {
+        height: 30px;
+        border: 0px;
         background-color: white;
-        border-radius:3px;
-        text-align:center;
+        border-radius: 3px;
+        text-align: center;
         line-height: 30px;
         float: right;
-        font-size:12px;
-        padding: 0px 13px;           
+        font-size: 12px;
+        padding: 0px 13px;
         @include vertical-center();
       }
-      input.st-sign
-      {
-        margin-right:15px;
+      input.st-sign {
+        margin-right: 15px;
       }
-      input.st-register
-      {
-        margin-right:15px;
-        padding: 0px 10px;                                               
+      input.st-register {
+        margin-right: 15px;
+        padding: 0px 10px;
         font-weight: 700;
       }
-      input.st-import
-      {
-        float:right;
-        background-color:$blue;
+      input.st-import {
+        float: right;
+        background-color: $blue;
         border: 1px solid white;
-        color:white;
+        color: white;
         @include vertical-center();
-        margin-right:15px;
+        margin-right: 15px;
         border-radius: 3px;
-        font-size:12px;
-        padding:8px 11px;
+        font-size: 12px;
+        padding: 8px 11px;
         font-weight: 700;
-        @include break-point(650px)
-        {
-          display:none;
+        @include break-point(650px) {
+          display: none;
         }
       }
-      img.st-flag
-      {
-        float:right;
-        margin-right:26px;
+      img.st-flag {
+        float: right;
+        margin-right: 26px;
         @include vertical-center();
-        height:18px;
+        height: 18px;
       }
-      span.st-currency
-      {
-        color:white;
-        margin-right:34px;
-        font-size:12px;
-        float:right;
+      span.st-currency {
+        color: white;
+        margin-right: 34px;
+        font-size: 12px;
+        float: right;
         font-weight: 700;
         @include vertical-center();
       }
     }
-    div.st-bottom
-    {
-      max-width:1110px;
-      margin:0px auto;
-      min-height:60px;
-      span.st-unselected
-      {
-       color: #838383;
+    div.st-bottom {
+      max-width: 1110px;
+      margin: 0px auto;
+      min-height: 60px;
+      span.st-unselected {
+        color: #838383;
       }
-      span.st-selected
-      {
-        border-bottom:2px solid white;
+      span.st-selected {
+        border-bottom: 2px solid white;
       }
-      span
-      {
-        color:white;
-        font-size:13px;
+      span {
+        color: white;
+        font-size: 13px;
         line-height: 55px;
-        margin:0 16px;
-        display:inline-block;
-        min-height:56px;
-        padding:auto;
-       
-        i 
-        {
-          font-size:25px;
-          margin-right:5px;
-          color:white;
+        margin: 0 16px;
+        display: inline-block;
+        min-height: 56px;
+        padding: auto;
+
+        i {
+          font-size: 25px;
+          margin-right: 5px;
+          color: white;
         }
       }
     }
   }
-  div.st-search
-  {
-    height:fit-content;
-    min-height:260px;
-    background-color: #F7F7F7;
-    margin:0px;
-    div.st-search-content
-    {
-      padding:44px 5px;
-      margin:0px auto;
-      width:calc(100% - 10px);
+  div.st-search {
+    height: fit-content;
+    min-height: 260px;
+    background-color: #f7f7f7;
+    margin: 0px;
+    div.st-search-content {
+      padding: 44px 5px;
+      margin: 0px auto;
+      width: calc(100% - 10px);
       border-collapse: separate;
-      max-width:1100px;
-      p.st-important 
-      {
-        font-size:24px;
-        margin:0px;
-        font-weight:600;
+      max-width: 1100px;
+      p.st-important {
+        font-size: 24px;
+        margin: 0px;
+        font-weight: 600;
       }
-      p.st-description
-      {
-        margin:0px 0px 10px;
-        font-size:14px;
+      p.st-description {
+        margin: 0px 0px 10px;
+        font-size: 14px;
       }
-      div.st-location 
-      {
-        margin-top:15px;
+      div.st-location {
+        margin-top: 15px;
         position: relative;
-        width:39%;
-        height:52px;
-        float:left;
-        min-width:190px;
-        margin-top:0px;
+        width: 39%;
+        height: 52px;
+        float: left;
+        min-width: 190px;
+        margin-top: 0px;
         margin-bottom: 10px;
-        input
-        {
-          width:calc(100% - 60px);
-          height:100%;
-          padding-left:60px;
+        input {
+          width: calc(100% - 60px);
+          height: 100%;
+          padding-left: 60px;
           border: 4px solid $yellow;
-          font-size:14px;
+          font-size: 14px;
         }
-        i
-        {
-          position:absolute;
-          top:18px;    
+        i {
+          position: absolute;
+          top: 18px;
           font-size: 25px;
           left: 18px;
-          color:$gray;
+          color: $gray;
         }
       }
-      div.st-date
-      {
-        margin-top:15px;
+      div.st-date {
+        margin-top: 15px;
         position: relative;
-        width:24%;
-        height:52px;
-        float:left;
-        min-width:235px;
-        margin:0px;
+        width: 24%;
+        height: 52px;
+        float: left;
+        min-width: 235px;
+        margin: 0px;
         margin-bottom: 10px;
-        
-        input
-        {
-          width:calc(100% - 60px);
-          height:100%;
-          padding-left:60px;
+
+        input {
+          width: calc(100% - 60px);
+          height: 100%;
+          padding-left: 60px;
           border: 4px solid $yellow;
-          font-size:14px;
+          font-size: 14px;
         }
-        i
-        {
-          position:absolute;
-          top:18px;    
+        i {
+          position: absolute;
+          top: 18px;
           font-size: 25px;
           left: 24px;
-          color:$gray;
+          color: $gray;
         }
       }
-      div.st-count
-      {
-        margin-top:15px;
+      div.st-count {
+        margin-top: 15px;
         position: relative;
-        width:26%;
-        height:52px;
-        float:left;
-        min-width:270px;
-        margin:0px;
+        width: 26%;
+        height: 52px;
+        float: left;
+        min-width: 270px;
+        margin: 0px;
         margin-bottom: 10px;
-        
-        input
-        {
-          width:calc(100% - 60px);
-          height:100%;
-          padding-left:60px;
+
+        input {
+          width: calc(100% - 60px);
+          height: 100%;
+          padding-left: 60px;
           border: 4px solid $yellow;
-          font-size:14px;
+          font-size: 14px;
         }
-        i
-        {
-          position:absolute;
-          top:18px;    
+        i {
+          position: absolute;
+          top: 18px;
           font-size: 25px;
           left: 24px;
-          color:$gray;
+          color: $gray;
         }
       }
-      div.st-search-btn
-      {
-        margin:0px;
+      div.st-search-btn {
+        margin: 0px;
         margin-bottom: 10px;
-        input.st-input
-        {
-          width:10%;
+        input.st-input {
+          width: 10%;
           position: relative;
-          float:left;
+          float: left;
           border: 4px solid $yellow;
-          height:62px;
-          font-size:20px;
-          color:white;
-          background-color:#006BB8;
-          min-width:75px;
-          overflow:hidden;
+          height: 62px;
+          font-size: 20px;
+          color: white;
+          background-color: #006bb8;
+          min-width: 75px;
+          overflow: hidden;
         }
       }
-      div.st-bussiness
-      {
-        float:left;
-        width:100%;
-        position:relative;
-        margin-top:15px;
-        input 
-        {
-          height:20px;
+      div.st-bussiness {
+        float: left;
+        width: 100%;
+        position: relative;
+        margin-top: 15px;
+        input {
+          height: 20px;
           width: 20px;
         }
       }
     }
   }
-  div.st-special-offer
-  {
-    width:calc(100% - 30px);
+  div.st-special-offer {
+    width: calc(100% - 30px);
     max-width: 1100px;
-    margin:60px auto 24px;
+    margin: 60px auto 24px;
     border: 1px solid $border-gray;
-    height:155px;
-    position:relative;
-    @include break-point(1100px)
-    {
+    height: 155px;
+    position: relative;
+    @include break-point(1100px) {
       margin: 60px 10px 24px;
     }
-    img{
-      top:24px;
-      left:24px;
-      position:absolute;
-    }
-    p.st-bold
-    {
-      font-weight:700;
-      position:absolute;
-      left: 138px;
-      top:5px;
-      font-size:16px;
-    }
-    p.st-description
-    {
+    img {
+      top: 24px;
+      left: 24px;
       position: absolute;
-      width:calc(100% - 150px);
-      left:138px;
-      color:$text-gray;
-      top:37px;
-      font-size:14px;
+    }
+    p.st-bold {
+      font-weight: 700;
+      position: absolute;
+      left: 138px;
+      top: 5px;
+      font-size: 16px;
+    }
+    p.st-description {
+      position: absolute;
+      width: calc(100% - 150px);
+      left: 138px;
+      color: $text-gray;
+      top: 37px;
+      font-size: 14px;
       @include text-overflow();
     }
-    input 
-    {
-      color:$blue-button;
-      background-color:white;
-      font-weight:900;
-      font-size:14px;
+    input {
+      color: $blue-button;
+      background-color: white;
+      font-weight: 900;
+      font-size: 14px;
       border: 1px solid $blue-button;
-      padding:8px 16px;
-      position:absolute;
-      left:138px;
-      top:89px;
+      padding: 8px 16px;
+      position: absolute;
+      left: 138px;
+      top: 89px;
     }
-    i 
-    {
-      position:absolute;
-      right:26px;
-      top:26px;
-      font-size:25px;
+    i {
+      position: absolute;
+      right: 26px;
+      top: 26px;
+      font-size: 25px;
     }
   }
-  div.st-images
-  {
-    width:calc(100% - 30px);
+  div.st-images {
+    width: calc(100% - 30px);
     max-width: 1100px;
-    margin:60px auto 24px;
-    position:relative;
-    @include break-point(1100px)
-    {
+    margin: 60px auto 24px;
+    position: relative;
+    @include break-point(1100px) {
       margin: 60px 10px 24px;
     }
-    div.st-image-holder
-    {
-      width:100%;
+    div.st-image-holder {
+      width: 100%;
       max-width: 1100px;
       min-width: 650px;
-      position:relative;
-      float:left;
-      div.st-first 
-      {
-        width:calc(50% - 10px);
+      position: relative;
+      float: left;
+      div.st-first {
+        width: calc(50% - 10px);
         background: url(/img/peterburg.jpg);
-        margin-right: 10px; 
+        margin-right: 10px;
         height: 340px;
-        float:left;
+        float: left;
         border-radius: 5px;
-       
-        p.st-title
-        {
-          position:absolute;
-          top:25px;
-          left:25px;
-          margin:0px;
-          color:white;
+
+        p.st-title {
+          position: absolute;
+          top: 25px;
+          left: 25px;
+          margin: 0px;
+          color: white;
           font-size: 28px;
-          font-weight:700;
+          font-weight: 700;
           text-shadow: 1px 1px black;
-          width:calc(50% - 62px);
-          img 
-          {
-            top:10px;
-            position:absolute;
-            margin-left:10px;
+          width: calc(50% - 62px);
+          img {
+            top: 10px;
+            position: absolute;
+            margin-left: 10px;
           }
         }
-        p.st-objects
-        {
-          position:absolute;
-          color:white;
-          top:49px;
-          width:calc(50% - 32px);
-          left:25px;
-          text-shadow:1px 1px black;
-          span 
-          {
-            font-weight:700;
+        p.st-objects {
+          position: absolute;
+          color: white;
+          top: 49px;
+          width: calc(50% - 32px);
+          left: 25px;
+          text-shadow: 1px 1px black;
+          span {
+            font-weight: 700;
             text-shadow: 1px 1px black;
           }
-
         }
-        p.st-check
-        {
-          background-color:#e9f0fa;
-          margin:0px;
+        p.st-check {
+          background-color: #e9f0fa;
+          margin: 0px;
           position: absolute;
-          width:calc(50% - 20px);
-          bottom:37px;
-          font-weight:700;
-          font-size:14px;
+          width: calc(50% - 20px);
+          bottom: 37px;
+          font-weight: 700;
+          font-size: 14px;
           padding: 0px 5px;
         }
-        div.st-suggestion
-        {
+        div.st-suggestion {
           display: grid;
           grid-template-columns: 1fr 2fr 1fr;
           grid-gap: 5px;
-          background-color:white;
+          background-color: white;
           position: absolute;
-          width:calc(50% - 22px);
-          padding:10px 5px 5px;
-          bottom:0px;
-          margin:0px;
-          height:20px;
+          width: calc(50% - 22px);
+          padding: 10px 5px 5px;
+          bottom: 0px;
+          margin: 0px;
+          height: 20px;
           line-height: 20px;
-          border:1px solid #e9f0fa;
+          border: 1px solid #e9f0fa;
           border-bottom-left-radius: 3px;
           border-bottom-right-radius: 3px;
-          font-weight:400;
-          font-size:14px;
-          text-align:center;
-          p.st-date
-          {
-            margin:0px;
+          font-weight: 400;
+          font-size: 14px;
+          text-align: center;
+          p.st-date {
+            margin: 0px;
             text-align: left;
-            color:blue;
+            color: blue;
             text-decoration: underline;
-            min-width: 87px
+            min-width: 87px;
           }
-          p.st-room
-          {
-            margin:0px;
-            text-align:center;
-            font-size:14px;
+          p.st-room {
+            margin: 0px;
+            text-align: center;
+            font-size: 14px;
             min-width: 150px;
           }
-          i 
-          {
+          i {
             text-align: right;
-            color:blue;
+            color: blue;
           }
         }
-        div.st-icon-holder
-        {
-          position:absolute;
-          right:calc(50% + 20px);
-          top:10px;
-          color:white;
+        div.st-icon-holder {
+          position: absolute;
+          right: calc(50% + 20px);
+          top: 10px;
+          color: white;
         }
       }
-      div.st-second
-      {
-        float:left;
-        width:calc(50% - 10px);
+      div.st-second {
+        float: left;
+        width: calc(50% - 10px);
         margin-left: 10px;
         border-radius: 5px;
         height: 340px;
         background: url(/img/moskva.png);
-        img.st-icon
-        {
-          width:28px;
-          height:28px;
+        img.st-icon {
+          width: 28px;
+          height: 28px;
           border-top-left-radius: 5px;
         }
-        p.st-title
-        {
-          position:absolute;
-          top:25px;
-          left:calc(50% + 27px);
-          margin:0px;
-          color:white;
+        p.st-title {
+          position: absolute;
+          top: 25px;
+          left: calc(50% + 27px);
+          margin: 0px;
+          color: white;
           font-size: 28px;
-          font-weight:700;
+          font-weight: 700;
           text-shadow: 1px 1px black;
-          width:calc(50% - 62px);
-          img 
-          {
-            top:10px;
-            position:absolute;
-            margin-left:10px;
+          width: calc(50% - 62px);
+          img {
+            top: 10px;
+            position: absolute;
+            margin-left: 10px;
           }
         }
-        p.st-objects
-        {
-          position:absolute;
-          color:white;
-          top:49px;
-          left:calc(50% + 27px);
-          width:calc(50% - 32px);
-          text-shadow:1px 1px black;
+        p.st-objects {
+          position: absolute;
+          color: white;
+          top: 49px;
+          left: calc(50% + 27px);
+          width: calc(50% - 32px);
+          text-shadow: 1px 1px black;
         }
-        p.st-average-price
-        {
-          background-color:$black;    
+        p.st-average-price {
+          background-color: $black;
           margin: 0px;
           width: 76px;
           font-size: 12px;
           position: absolute;
           right: 15px;
           bottom: 15px;
-          padding:4px 6px;
+          padding: 4px 6px;
           border-radius: 3px;
-          text-align:right;
-          color:white;
-          span.st-price
-          {
-            font-size:16px;
+          text-align: right;
+          color: white;
+          span.st-price {
+            font-size: 16px;
           }
         }
-        div.st-icon-holder
-        {
-          position:absolute;
-          right:20px;
-          color:white;
-          top:10px;
+        div.st-icon-holder {
+          position: absolute;
+          right: 20px;
+          color: white;
+          top: 10px;
         }
       }
     }
-  div.st-second-row
-    {
+    div.st-second-row {
       width: 100%;
       max-width: 1100px;
       min-width: 670px;
-      display:grid;
-      float:left;
-      margin:15px 0 40px;
+      display: grid;
+      float: left;
+      margin: 15px 0 40px;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-gap:15px;
-      position:relative;
-      height:272px;
-        div.st-image
-        {
-          position:relative;
-          border-radius:5px;
-          img.st-icon
-          {
-            width:28px;
-            height:28px;
-            border-top-left-radius: 5px;
+      grid-gap: 15px;
+      position: relative;
+      height: 272px;
+      div.st-image {
+        position: relative;
+        border-radius: 5px;
+        img.st-icon {
+          width: 28px;
+          height: 28px;
+          border-top-left-radius: 5px;
+        }
+        p.st-title {
+          position: absolute;
+          top: 25px;
+          left: 25px;
+          margin: 0px;
+          color: white;
+          font-size: 28px;
+          font-weight: 700;
+          text-shadow: 1px 1px black;
+          img {
+            height: 18px;
+            width: 18px;
           }
-          p.st-title
-          {
-            position:absolute;
-            top:25px;
-            left:25px;
-            margin:0px;
-            color:white;
-            font-size: 28px;
-            font-weight:700;
-            text-shadow: 1px 1px black;
-            img
-            {
-              height:18px;
-              width:18px;
-            }
-          }
-          p.st-objects-number
-          {
-            position: absolute;
-            left: 25px;
-            top: 45px;
-            text-shadow: 1px 1px black;
-            color: white;
-            font-size: 16px;
-          }
-          p.st-price
-          {
-          background-color:$black;    
+        }
+        p.st-objects-number {
+          position: absolute;
+          left: 25px;
+          top: 45px;
+          text-shadow: 1px 1px black;
+          color: white;
+          font-size: 16px;
+        }
+        p.st-price {
+          background-color: $black;
           margin: 0px;
           width: 85px;
           font-size: 12px;
           position: absolute;
           right: 15px;
           bottom: 15px;
-          padding:4px 6px;
+          padding: 4px 6px;
           border-radius: 3px;
-          text-align:right;
-          color:white;
-          span
-          {
-            font-size:16px;
+          text-align: right;
+          color: white;
+          span {
+            font-size: 16px;
           }
-         }
-         i 
-         {
-           color:white;
-           position: absolute;
-           right:15px;
-           top:15px;
-         }
         }
-        div.st-first 
-        {
-          background: url(/img/kiev.jpg);
-        }
-        div.st-second
-        {
-          background: url(/img/riga.jpg)
-        }
-        div.st-third
-        {
-          background: url(/img/helsinki.jpg);
+        i {
+          color: white;
+          position: absolute;
+          right: 15px;
+          top: 15px;
         }
       }
+      div.st-first {
+        background: url(/img/kiev.jpg);
+      }
+      div.st-second {
+        background: url(/img/riga.jpg);
+      }
+      div.st-third {
+        background: url(/img/helsinki.jpg);
+      }
+    }
   }
-  div.st-accommodation
-  {
-    max-width:1100px;
-    width:100%;
+  div.st-accommodation {
+    max-width: 1100px;
+    width: 100%;
     margin: 0px auto;
-    p.st-title
-    {
-      font-size:24px;
-      color:$black;
-      float:left;
-      font-weight:700;
-      margin:0px 0px 16px;
+    p.st-title {
+      font-size: 24px;
+      color: $black;
+      float: left;
+      font-weight: 700;
+      margin: 0px 0px 16px;
     }
-    div.st-sorts
-    {
-      display:grid;
+    div.st-sorts {
+      display: grid;
       grid-template-columns: repeat(5, 1fr);
-      height:300px;
-      grid-gap:16px;
-      float:left;
-      width:100%;
-      div.st-type
-      {
-       img 
-       {
-         height:207px;
-         width:100%;
-         border-radius: 5px;
-       }
-       p.st-type
-       {
-         font-size:16px;
-         font-weight: 700;
-         margin:16px 0 0;
-       }
-       p.st-ammount
-       {
-         color:#707070;
-         font-size:12px;
-         margin:0 0 16px;
-       }
-
+      height: 300px;
+      grid-gap: 16px;
+      float: left;
+      width: 100%;
+      div.st-type {
+        img {
+          height: 207px;
+          width: 100%;
+          border-radius: 5px;
+        }
+        p.st-type {
+          font-size: 16px;
+          font-weight: 700;
+          margin: 16px 0 0;
+        }
+        p.st-ammount {
+          color: #707070;
+          font-size: 12px;
+          margin: 0 0 16px;
+        }
       }
-      
     }
-    div.st-private-rooms
-    {
-      p.st-title
-      {
-        font-size:24px;
+    div.st-private-rooms {
+      p.st-title {
+        font-size: 24px;
       }
-      div.st-offers
-      {
+      div.st-offers {
         max-width: 1100px;
-        width:100%;
-        height:356px;
-        display:grid;
+        width: 100%;
+        height: 356px;
+        display: grid;
         grid-template-columns: repeat(4, 1fr);
         position: relative;
-        grid-gap:16px;
-        div
-        {
+        grid-gap: 16px;
+        div {
           position: relative;
-          min-width:0;
-        
-     img 
-     {
-       max-width:100%;
-       height:240px;
-     }
-     p.st-name
-     {
-       color:$text-gray;
-       margin: 8px 0 0 0;
-       max-width:100%;
-       font-size:14px;
-       position: absolute;
-       @include text-overflow();
-     }
-     p.st-location
-     {
-       color:#707070;
-       font-size:14px;
-       margin:0;
-       position: absolute;
-       top:267px;
-     }
-     p.st-price
-     {
-       margin: 8px 0 0;
-       font-size:14px;
-       position: absolute;
-       top:279px;
-       font-weight: 600;
-     }
-     p.st-score
-     {
+          min-width: 0;
 
-       top: 296px;
-       position: absolute;
-       span.st-mark
-       {
-       background-color: $mark-blue;
-       color:white;
-       padding:4px;
-       border-radius: 6px 6px 6px 0px;
-       font-size:14px;
-       font-weight: 500;
-       }
-       span.st-desc
-       {
-         color:$mark-blue;
-         font-size:14px;
-         font-weight: 500;
-       }
-       span.st-rec-num
-       {
-        color: #707070;
-        height: 40px;
-        position: absolute;
-        display: block;
-        width: 100%;
-        bottom: -24px;
-        left: 80px;
-        text-align: right;
-        font-size: 12px;
-        @include break-point(744px)
-        {
-          bottom: -14px;
-          width:50px;
-          text-align: left;
-          left: 95px;
+          img {
+            max-width: 100%;
+            height: 240px;
+          }
+          p.st-name {
+            color: $text-gray;
+            margin: 8px 0 0 0;
+            max-width: 100%;
+            font-size: 14px;
+            position: absolute;
+            @include text-overflow();
+          }
+          p.st-location {
+            color: #707070;
+            font-size: 14px;
+            margin: 0;
+            position: absolute;
+            top: 267px;
+          }
+          p.st-price {
+            margin: 8px 0 0;
+            font-size: 14px;
+            position: absolute;
+            top: 279px;
+            font-weight: 600;
+          }
+          p.st-score {
+            top: 296px;
+            position: absolute;
+            span.st-mark {
+              background-color: $mark-blue;
+              color: white;
+              padding: 4px;
+              border-radius: 6px 6px 6px 0px;
+              font-size: 14px;
+              font-weight: 500;
+            }
+            span.st-desc {
+              color: $mark-blue;
+              font-size: 14px;
+              font-weight: 500;
+            }
+            span.st-rec-num {
+              color: #707070;
+              height: 40px;
+              position: absolute;
+              display: block;
+              width: 100%;
+              bottom: -24px;
+              left: 80px;
+              text-align: right;
+              font-size: 12px;
+              @include break-point(744px) {
+                bottom: -14px;
+                width: 50px;
+                text-align: left;
+                left: 95px;
+              }
+            }
+          }
         }
-       }
-     }
+      }
     }
   }
+  div.st-register {
+    width: calc(100% - 2px);
+    max-width: 1100px;
+    margin: 24px auto 32px;
+    border: 1px solid $border-gray;
+    position: relative;
+    height: 164px;
+    img {
+      padding: 24px;
+      float: left;
     }
+    p.st-main {
+      float: left;
+      width: calc(100% - 150px);
+      font-size: 16px;
+      font-weight: 700;
+      margin: 24px 0 8px;
+    }
+    p.st-prices {
+      float: left;
+      width: calc(100% - 150px);
+      margin: 0 0 20px;
+    }
+    input {
+      float: left;
+      width: 50%;
+      padding: 9px;
+    }
+    button {
+      float: left;
+      width: 100px;
+      background-color: white;
+      height: 37px;
+      line-height: 37px;
+      text-align: center;
+      color: $blue-button;
+      margin-left: 8px;
+      border: 1px solid $blue-button;
+    }
+  }
+  div.st-popular-destination {
+    display: grid;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0px auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+    position: relative;
+    div.st-location {
+      div.st-image {
+        position: relative;
+        img {
+          width: 100%;
+        }
+        div.st-image-location {
+          padding: 16px;
+          background-image: linear-gradient(to top, rgb(0, 0, 0) 0px, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%);
+          position: absolute;
+          bottom: 0px;
+          width: calc(100% - 32px);
+
+          p.st-name {
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0px;
+          }
+          p.st-country {
+            color: white;
+            margin: 0px;
+          }
+        }
+      }
+      p.st-available {
+        margin-top: 13px;
+        text-decoration: underline;
+        color: #0077cc;
+        font-size: 14px;
+      }
+    }
+  }
+  p.st-more-destination {
+    color: #0077cc;
+    text-decoration: underline;
+    max-width: 1100px;
+    width: 100%;
+    text-align: right;
+    margin: 0px auto;
+    font-weight: 700;
+    font-size: 13px;
+  }
+  div.st-favorite-destinations {
+    margin: 32px 0 16px;
+    p.st-title {
+      font-size: 24px;
+      max-width: 1100px;
+      width: 100%;
+      margin: 0px auto;
+      font-weight: 700;
+    }
+    div.st-chosse-type {
+      max-width: 1100px;
+      margin: 28px auto 0px;
+      border-bottom: 1px solid #0077cc;
+    }
+    span.st-selected {
+      background-color: #0077cc;
+      color: white;
+      padding: 7px 15px;
+      line-height: 30px;
+      font-size: 13px;
+    }
+    span.st-unselected {
+      color: #737373;
+      padding: 7px 15px;
+      line-height: 30px;
+      font-size: 13px;
+    }
+    table.st-destinations {
+      max-width: 1100px;
+      margin: 0px auto;
+      width: 100%;
+      td {
+        width:20%;
+        span.st-name {
+          color: #0077cc;
+          font-size:14px;
+        }
+        span.st-number {
+          color: #737373;
+          font-size:13px;
+        }
+      }
+    }
+  }
+  div.st-discover
+  {
+    font-size:24px;
+    font-weight: 700;
+    max-width: 1100px;
+    margin: 60px auto;
   }
 }
