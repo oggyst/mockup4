@@ -1,25 +1,29 @@
 @import "colors.scss";
 @import "mixins.scss";
 
-body {
+body 
+{
   font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   min-width: 400px;
   margin: 0px;
   padding: 0px;
-  padding-bottom: 1000px;
-  div.st-header {
+  div.st-header 
+  {
     background-color: $blue;
 
-    div.st-top {
+    div.st-top 
+    {
       max-width: 1110px;
       margin: 0px auto;
       height: 50px;
-      img.st-logo {
+      img.st-logo 
+      {
         width: 150px;
         height: 25px;
         @include vertical-center();
       }
-      input.st-button {
+      input.st-button 
+      {
         height: 30px;
         border: 0px;
         background-color: white;
@@ -31,15 +35,18 @@ body {
         padding: 0px 13px;
         @include vertical-center();
       }
-      input.st-sign {
+      input.st-sign 
+      {
         margin-right: 15px;
       }
-      input.st-register {
+      input.st-register 
+      {
         margin-right: 15px;
         padding: 0px 10px;
         font-weight: 700;
       }
-      input.st-import {
+      input.st-import 
+      {
         float: right;
         background-color: $blue;
         border: 1px solid white;
@@ -50,17 +57,20 @@ body {
         font-size: 12px;
         padding: 8px 11px;
         font-weight: 700;
-        @include break-point(650px) {
+        @include break-point(650px) 
+        {
           display: none;
         }
       }
-      img.st-flag {
+      img.st-flag 
+      {
         float: right;
         margin-right: 26px;
         @include vertical-center();
         height: 18px;
       }
-      span.st-currency {
+      span.st-currency
+      {
         color: white;
         margin-right: 34px;
         font-size: 12px;
@@ -69,17 +79,21 @@ body {
         @include vertical-center();
       }
     }
-    div.st-bottom {
+    div.st-bottom 
+    {
       max-width: 1110px;
       margin: 0px auto;
       min-height: 60px;
-      span.st-unselected {
+      span.st-unselected 
+      {
         color: #838383;
       }
-      span.st-selected {
+      span.st-selected 
+      {
         border-bottom: 2px solid white;
       }
-      span {
+      span 
+      {
         color: white;
         font-size: 13px;
         line-height: 55px;
@@ -88,7 +102,8 @@ body {
         min-height: 56px;
         padding: auto;
 
-        i {
+        i 
+        {
           font-size: 25px;
           margin-right: 5px;
           color: white;
@@ -96,30 +111,38 @@ body {
       }
     }
   }
-  div.st-search {
+  div.st-search 
+  {
     height: fit-content;
     min-height: 260px;
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
     margin: 0px;
-    p.st-important {
+    @include break-point(1030px) 
+    {
+      height: 410px;
+    }
+    p.st-important 
+    {
       font-size: 24px;
       margin: 0 auto;
       max-width: 1100px;
       font-weight: 600;
     }
-    p.st-description {
+    p.st-description 
+    {
       margin: 0 auto;
       max-width: 1100px;
       font-size: 14px;
     }
-    div.st-search-content {
+    div.st-search-content 
+    {
       padding: 44px 5px;
       margin: 0px auto;
       width: calc(100% - 10px);
       max-width: 1100px;
-      
-     
-      div.st-location {
+
+      div.st-location 
+      {
         margin-top: 15px;
         position: relative;
         width: 35%;
@@ -128,14 +151,19 @@ body {
         min-width: 190px;
         margin-top: 0px;
         margin-bottom: 10px;
+        @include break-point(1030px) 
+        {
+          width: calc(100% - 5px);
+        }
         input {
-          width: calc(100% - 60px);
+          width: calc(100% - 63px);
           height: 100%;
           padding-left: 60px;
-          border: 4px solid #FEBB02;
+          border: 4px solid #febb02;
           font-size: 14px;
         }
-        i {
+        i 
+        {
           position: absolute;
           top: 18px;
           font-size: 25px;
@@ -143,7 +171,8 @@ body {
           color: $gray;
         }
       }
-      div.st-date {
+      div.st-date 
+      {
         margin-top: 15px;
         position: relative;
         width: 28%;
@@ -153,15 +182,22 @@ body {
         margin: 0px;
         margin-bottom: 10px;
 
-        input {
-          width: calc(100% - 75px);
+        @include break-point(1030px) 
+        {
+          display: none;
+        }
+
+        input 
+        {
+          width: calc(100% - 63px);
           height: 100%;
           padding-left: 60px;
-          padding-right:15px;
-          border: 4px solid #FEBB02;
+          padding-right: 15px;
+          border: 4px solid #febb02;
           font-size: 14px;
         }
-        i {
+        i 
+        {
           position: absolute;
           top: 18px;
           font-size: 25px;
@@ -169,11 +205,44 @@ body {
           color: $gray;
         }
       }
-      div.st-low-res-date
+      div.st-low-res-date 
       {
-        display:none;
+        display: none;
+        @include break-point(1030px) 
+        {
+          width: 100%;
+          div 
+          {
+            position: relative;
+            width: 50%;
+            float: left;
+          }
+          position: relative;
+          display: block;
+          float: left;
+          width: 100%;
+          input 
+          {
+            width: calc(100% - 83px);
+            height: 52px;
+            padding-left: 60px;
+            padding-right: 15px;
+            float: left;
+            border: 4px solid #febb02;
+            font-size: 14px;
+          }
+          i 
+          {
+            position: absolute;
+            top: 18px;
+            font-size: 25px;
+            left: 24px;
+            color: $gray;
+          }
+        }
       }
-      div.st-count {
+      div.st-count 
+      {
         margin-top: 15px;
         position: relative;
         width: 26%;
@@ -182,13 +251,22 @@ body {
         min-width: 270px;
         margin: 0px;
         margin-bottom: 10px;
+        @include break-point(1030px) 
+        {
+          width: 100%;
+        }
 
-        input {
+        input 
+        {
           width: calc(100% - 60px);
           height: 100%;
-          padding-left:60px;
-          border: 4px solid #FEBB02;
+          padding-left: 60px;
+          border: 4px solid #febb02;
           font-size: 14px;
+          @include break-point(1030px) 
+          {
+            width: calc(100% - 68px);
+          }
         }
         i {
           position: absolute;
@@ -198,58 +276,71 @@ body {
           color: $gray;
         }
       }
-      div.st-search-btn {
+      div.st-search-btn 
+      {
         margin: 0px;
         margin-bottom: 10px;
-        input.st-input {
+
+        input.st-input 
+        {
           width: 10%;
           position: relative;
           float: left;
-          border: 4px solid #FEBB02;
+          border: 4px solid #febb02;
           height: 62px;
           font-size: 20px;
           color: white;
           background-color: #006bb8;
           min-width: 75px;
           overflow: hidden;
+          @include break-point(1030px) 
+          {
+            width: 100%;
+          }
         }
-       
       }
-      div.st-bussiness {
+      div.st-bussiness 
+      {
         float: left;
         width: 100%;
         position: relative;
         margin-top: 15px;
-        input {
+        input 
+        {
           height: 20px;
           width: 20px;
         }
       }
     }
   }
-  div.st-special-offer {
+  div.st-special-offer 
+  {
     width: calc(100% - 30px);
     max-width: 1100px;
     margin: 60px auto 24px;
     border: 1px solid $border-gray;
     height: 155px;
     position: relative;
-    @include break-point(1100px) {
+    @include break-point(1100px) 
+    {
       margin: 60px 10px 24px;
     }
-    img {
+    img 
+    {
       top: 24px;
       left: 24px;
       position: absolute;
     }
-    p.st-bold {
+    p.st-bold 
+    {
       font-weight: 700;
       position: absolute;
       left: 138px;
       top: 5px;
       font-size: 16px;
     }
-    p.st-description {
+    p.st-description 
+    {
       position: absolute;
       width: calc(100% - 150px);
       left: 138px;
@@ -258,7 +349,8 @@ body {
       font-size: 14px;
       @include text-overflow();
     }
-    input {
+    input 
+    {
       color: $blue-button;
       background-color: white;
       font-weight: 900;
@@ -269,28 +361,33 @@ body {
       left: 138px;
       top: 89px;
     }
-    i {
+    i 
+    {
       position: absolute;
       right: 26px;
       top: 26px;
       font-size: 25px;
     }
   }
-  div.st-images {
+  div.st-images 
+  {
     width: calc(100% - 30px);
     max-width: 1100px;
     margin: 60px auto 24px;
     position: relative;
-    @include break-point(1100px) {
+    @include break-point(1100px) 
+    {
       margin: 60px 10px 24px;
     }
-    div.st-image-holder {
+    div.st-image-holder 
+    {
       width: 100%;
       max-width: 1100px;
       min-width: 650px;
       position: relative;
       float: left;
-      div.st-first {
+      div.st-first 
+      {
         width: calc(50% - 10px);
         background: url(/img/peterburg.jpg);
         margin-right: 10px;
@@ -298,7 +395,8 @@ body {
         float: left;
         border-radius: 5px;
 
-        p.st-title {
+        p.st-title 
+        {
           position: absolute;
           top: 25px;
           left: 25px;
@@ -308,25 +406,29 @@ body {
           font-weight: 700;
           text-shadow: 1px 1px black;
           width: calc(50% - 62px);
-          img {
+          img 
+          {
             top: 10px;
             position: absolute;
             margin-left: 10px;
           }
         }
-        p.st-objects {
+        p.st-objects 
+        {
           position: absolute;
           color: white;
           top: 49px;
           width: calc(50% - 32px);
           left: 25px;
           text-shadow: 1px 1px black;
-          span {
+          span 
+          {
             font-weight: 700;
             text-shadow: 1px 1px black;
           }
         }
-        p.st-check {
+        p.st-check 
+        {
           background-color: #e9f0fa;
           margin: 0px;
           position: absolute;
@@ -336,7 +438,8 @@ body {
           font-size: 14px;
           padding: 0px 5px;
         }
-        div.st-suggestion {
+        div.st-suggestion 
+        {
           display: grid;
           grid-template-columns: 1fr 2fr 1fr;
           grid-gap: 5px;
@@ -354,44 +457,51 @@ body {
           font-weight: 400;
           font-size: 14px;
           text-align: center;
-          p.st-date {
+          p.st-date 
+          {
             margin: 0px;
             text-align: left;
             color: blue;
             text-decoration: underline;
             min-width: 87px;
           }
-          p.st-room {
+          p.st-room 
+          {
             margin: 0px;
             text-align: center;
             font-size: 14px;
             min-width: 150px;
           }
-          i {
+          i 
+          {
             text-align: right;
             color: blue;
           }
         }
-        div.st-icon-holder {
+        div.st-icon-holder 
+        {
           position: absolute;
           right: calc(50% + 20px);
           top: 10px;
           color: white;
         }
       }
-      div.st-second {
+      div.st-second
+      {
         float: left;
         width: calc(50% - 10px);
         margin-left: 10px;
         border-radius: 5px;
         height: 340px;
         background: url(/img/moskva.png);
-        img.st-icon {
+        img.st-icon 
+        {
           width: 28px;
           height: 28px;
           border-top-left-radius: 5px;
         }
-        p.st-title {
+        p.st-title 
+        {
           position: absolute;
           top: 25px;
           left: calc(50% + 27px);
@@ -401,13 +511,15 @@ body {
           font-weight: 700;
           text-shadow: 1px 1px black;
           width: calc(50% - 62px);
-          img {
+          img 
+          {
             top: 10px;
             position: absolute;
             margin-left: 10px;
           }
         }
-        p.st-objects {
+        p.st-objects 
+        {
           position: absolute;
           color: white;
           top: 49px;
@@ -415,7 +527,8 @@ body {
           width: calc(50% - 32px);
           text-shadow: 1px 1px black;
         }
-        p.st-average-price {
+        p.st-average-price 
+        {
           background-color: $black;
           margin: 0px;
           width: 76px;
@@ -427,11 +540,13 @@ body {
           border-radius: 3px;
           text-align: right;
           color: white;
-          span.st-price {
+          span.st-price 
+          {
             font-size: 16px;
           }
         }
-        div.st-icon-holder {
+        div.st-icon-holder 
+        {
           position: absolute;
           right: 20px;
           color: white;
@@ -439,7 +554,8 @@ body {
         }
       }
     }
-    div.st-second-row {
+    div.st-second-row 
+    {
       width: 100%;
       max-width: 1100px;
       min-width: 670px;
@@ -450,15 +566,18 @@ body {
       grid-gap: 15px;
       position: relative;
       height: 272px;
-      div.st-image {
+      div.st-image 
+      {
         position: relative;
         border-radius: 5px;
-        img.st-icon {
+        img.st-icon 
+        {
           width: 28px;
           height: 28px;
           border-top-left-radius: 5px;
         }
-        p.st-title {
+        p.st-title 
+        {
           position: absolute;
           top: 25px;
           left: 25px;
@@ -467,12 +586,14 @@ body {
           font-size: 28px;
           font-weight: 700;
           text-shadow: 1px 1px black;
-          img {
+          img 
+          {
             height: 18px;
             width: 18px;
           }
         }
-        p.st-objects-number {
+        p.st-objects-number 
+        {
           position: absolute;
           left: 25px;
           top: 45px;
@@ -480,7 +601,8 @@ body {
           color: white;
           font-size: 16px;
         }
-        p.st-price {
+        p.st-price 
+        {
           background-color: $black;
           margin: 0px;
           width: 85px;
@@ -492,72 +614,87 @@ body {
           border-radius: 3px;
           text-align: right;
           color: white;
-          span {
+          span 
+          {
             font-size: 16px;
           }
         }
-        i {
+        i 
+        {
           color: white;
           position: absolute;
           right: 15px;
           top: 15px;
         }
       }
-      div.st-first {
+      div.st-first 
+      {
         background: url(/img/kiev.jpg);
       }
-      div.st-second {
+      div.st-second 
+      {
         background: url(/img/riga.jpg);
       }
-      div.st-third {
+      div.st-third 
+      {
         background: url(/img/helsinki.jpg);
       }
     }
   }
-  div.st-accommodation {
+  div.st-accommodation 
+  {
     max-width: 1100px;
     width: 100%;
     margin: 0px auto;
-    p.st-title {
+    p.st-title 
+    {
       font-size: 24px;
       color: $black;
       float: left;
       font-weight: 700;
       margin: 0px 0px 16px;
     }
-    div.st-sorts {
+    div.st-sorts 
+    {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       height: 300px;
       grid-gap: 16px;
       float: left;
       width: calc(100% - 10px);
-      padding:0 5px;
-      div.st-type {
-        img {
+      padding: 0 5px;
+      div.st-type 
+      {
+        img 
+        {
           height: 207px;
           width: 100%;
           border-radius: 5px;
         }
-        p.st-type {
+        p.st-type 
+        {
           font-size: 16px;
           font-weight: 700;
           margin: 16px 0 0;
         }
-        p.st-ammount {
+        p.st-ammount 
+        {
           color: #707070;
           font-size: 12px;
           margin: 0 0 16px;
         }
       }
     }
-    div.st-private-rooms {
-      p.st-title {
+    div.st-private-rooms 
+    {
+      p.st-title 
+      {
         font-size: 24px;
         padding: 0 5px;
-        width:calc(100% - 10px);
+        width: calc(100% - 10px);
       }
-      div.st-offers {
+      div.st-offers 
+      {
         max-width: 1100px;
         width: calc(100% - 10px);
         height: 356px;
@@ -565,16 +702,19 @@ body {
         grid-template-columns: repeat(4, 1fr);
         position: relative;
         grid-gap: 16px;
-        padding:0 5px;
-        div {
+        padding: 0 5px;
+        div
+        {
           position: relative;
           min-width: 0;
 
-          img {
+          img 
+          {
             max-width: 100%;
             height: 240px;
           }
-          p.st-name {
+          p.st-name 
+          {
             color: $text-gray;
             margin: 8px 0 0 0;
             max-width: 100%;
@@ -582,24 +722,28 @@ body {
             position: absolute;
             @include text-overflow();
           }
-          p.st-location {
+          p.st-location 
+          {
             color: #707070;
             font-size: 14px;
             margin: 0;
             position: absolute;
             top: 267px;
           }
-          p.st-price {
+          p.st-price 
+          {
             margin: 8px 0 0;
             font-size: 14px;
             position: absolute;
             top: 279px;
             font-weight: 600;
           }
-          p.st-score {
+          p.st-score 
+          {
             top: 296px;
             position: absolute;
-            span.st-mark {
+            span.st-mark 
+            {
               background-color: $mark-blue;
               color: white;
               padding: 4px;
@@ -607,12 +751,14 @@ body {
               font-size: 14px;
               font-weight: 500;
             }
-            span.st-desc {
+            span.st-desc 
+            {
               color: $mark-blue;
               font-size: 14px;
               font-weight: 500;
             }
-            span.st-rec-num {
+            span.st-rec-num 
+            {
               color: #707070;
               height: 40px;
               position: absolute;
@@ -622,7 +768,8 @@ body {
               left: 80px;
               text-align: right;
               font-size: 12px;
-              @include break-point(744px) {
+              @include break-point(744px) 
+              {
                 bottom: -14px;
                 width: 50px;
                 text-align: left;
@@ -634,39 +781,46 @@ body {
       }
     }
   }
-  div.st-register {
+  div.st-register 
+  {
     width: calc(100% - 12px);
     max-width: 1100px;
     margin: 24px auto 32px;
     border: 1px solid $border-gray;
     position: relative;
     height: 164px;
-    @include break-point(1100px){
-      margin:24px 5px 32px;
+    @include break-point(1100px) 
+    {
+      margin: 24px 5px 32px;
     }
-    
-    img {
+
+    img 
+    {
       padding: 24px;
       float: left;
     }
-    p.st-main {
+    p.st-main 
+    {
       float: left;
       width: calc(100% - 150px);
       font-size: 16px;
       font-weight: 700;
       margin: 24px 0 8px;
     }
-    p.st-prices {
+    p.st-prices 
+    {
       float: left;
       width: calc(100% - 150px);
       margin: 0 0 20px;
     }
-    input {
+    input
+    {
       float: left;
       width: 50%;
       padding: 9px;
     }
-    button {
+    button 
+    {
       float: left;
       width: 100px;
       background-color: white;
@@ -678,7 +832,8 @@ body {
       border: 1px solid $blue-button;
     }
   }
-  div.st-popular-destination {
+  div.st-popular-destination 
+  {
     display: grid;
     width: 100%;
     max-width: 1100px;
@@ -686,32 +841,39 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 16px;
     position: relative;
-    div.st-location {
-      div.st-image {
+    div.st-location 
+    {
+      div.st-image 
+      {
         position: relative;
-        img {
+        img 
+        {
           width: 100%;
         }
-        div.st-image-location {
+        div.st-image-location 
+        {
           padding: 16px;
           background-image: linear-gradient(to top, rgb(0, 0, 0) 0px, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%);
           position: absolute;
           bottom: 0px;
           width: calc(100% - 32px);
 
-          p.st-name {
+          p.st-name 
+          {
             color: white;
             font-size: 18px;
             font-weight: 700;
             margin: 0px;
           }
-          p.st-country {
+          p.st-country 
+          {
             color: white;
             margin: 0px;
           }
         }
       }
-      p.st-available {
+      p.st-available 
+      {
         margin-top: 13px;
         text-decoration: underline;
         color: #0077cc;
@@ -719,7 +881,8 @@ body {
       }
     }
   }
-  p.st-more-destination {
+  p.st-more-destination 
+  {
     color: #0077cc;
     text-decoration: underline;
     max-width: 1100px;
@@ -729,62 +892,74 @@ body {
     font-weight: 700;
     font-size: 13px;
   }
-  div.st-favorite-destinations {
+  div.st-favorite-destinations 
+  {
     margin: 32px 0 16px;
-    p.st-title {
+    p.st-title 
+    {
       font-size: 24px;
       max-width: 1100px;
       width: 100%;
       margin: 0px auto;
       font-weight: 700;
     }
-    div.st-chosse-type {
+    div.st-chosse-type 
+    {
       max-width: 1100px;
       margin: 28px auto 0px;
       border-bottom: 1px solid #0077cc;
     }
-    span.st-selected {
+    span.st-selected
+    {
       background-color: #0077cc;
       color: white;
       padding: 7px 15px;
       line-height: 30px;
       font-size: 13px;
     }
-    span.st-unselected {
+    span.st-unselected 
+    {
       color: #737373;
       padding: 7px 15px;
       line-height: 30px;
       font-size: 13px;
     }
-    table.st-destinations {
+    table.st-destinations 
+    {
       max-width: 1100px;
       margin: 0px auto;
       width: 100%;
-      td {
+      td 
+      {
         width: 20%;
-        span.st-name {
+        span.st-name 
+        {
           color: #0077cc;
           font-size: 14px;
         }
-        span.st-number {
+        span.st-number 
+        {
           color: #737373;
           font-size: 13px;
         }
       }
     }
   }
-  div.st-discover {
+  div.st-discover 
+  {
     font-size: 24px;
     font-weight: 700;
     max-width: 1100px;
     position: relative;
     margin: 60px auto 16px;
   }
-  div.st-page-picker {
+  div.st-page-picker 
+  {
     height: 20px;
     max-width: 1100px;
     margin: 0px auto;
-    span.st-unselected {
+    span.st-unselected 
+    {
       float: right;
       font-size: 13px;
       padding: 0 7px 2px;
@@ -793,7 +968,8 @@ body {
       color: white;
       font-weight: 400;
     }
-    span.st-selected {
+    span.st-selected 
+    {
       float: right;
       font-size: 13px;
       padding: 0 7px 2px;
@@ -802,7 +978,8 @@ body {
       color: white;
       font-weight: 400;
     }
-    span.st-more {
+    span.st-more 
+    {
       float: right;
       margin-left: 10px;
       font-size: 13px;
@@ -810,10 +987,12 @@ body {
       color: #0077cc;
     }
   }
-  div.st-things-holder {
+  div.st-things-holder 
+  {
     width: 100%;
     height: fit-content;
-    div.st-things-to-enjoy {
+    div.st-things-to-enjoy 
+    {
       display: grid;
       width: 100%;
       min-width: 0px;
@@ -823,13 +1002,16 @@ body {
       grid-gap: 14px;
       position: relative;
     }
-    div {
+    div 
+    {
       min-width: 0px;
       position: relative;
-      img {
+      img 
+      {
         width: 100%;
       }
-      p.st-text {
+      p.st-text 
+      {
         background-color: rgba(0, 0, 0, 0.3);
         position: absolute;
         width: calc(100% - 30px);
@@ -840,12 +1022,14 @@ body {
         text-align: center;
         padding: 0 15px;
         @include text-overflow();
-        &:hover {
+        &:hover 
+        {
           background-color: rgba(0, 0, 0, 0.3);
           padding: 0 15px;
         }
       }
-      p.st-location-name {
+      p.st-location-name 
+      {
         font-size: 14px;
         color: #0077cc;
         text-align: center;
@@ -854,29 +1038,35 @@ body {
       }
     }
   }
-  div.st-footer-holder {
+  div.st-footer-holder 
+  {
     background-color: #001b42;
     padding: 50px 0px;
-    div.st-footer {
+    div.st-footer 
+    {
       color: white;
       max-width: 1100px;
       margin: 0px auto;
       text-align: center;
-      h2.st-title {
+      h2.st-title 
+      {
         font-size: 24px;
         font-weight: 300;
         margin: 0px;
         display: block;
       }
-      p.st-subscribe {
+      p.st-subscribe 
+      {
         font-size: 16px;
         margin: 0 0 25px;
       }
-      div.st-subscribe-holder {
+      div.st-subscribe-holder 
+      {
         width: 50%;
         min-width: 435px;
         margin: 0px auto;
-        input.st-give-mail {
+        input.st-give-mail 
+        {
           width: 65%;
           padding: 10px;
           font-size: 20px;
@@ -884,7 +1074,8 @@ body {
           border-radius: 5px;
           border: 0px;
         }
-        input.st-submit {
+        input.st-submit 
+        {
           padding: 14.4px 24px;
           font-size: 16px;
           background-color: #0077cc;
@@ -894,18 +1085,21 @@ body {
           border-radius: 5px;
         }
       }
-      p.st-send-me {
+      p.st-send-me 
+      {
         margin: 0px;
         width: 100%;
       }
     }
   }
-  div.st-add-object {
+  div.st-add-object
+  {
     width: calc(100% - 20px);
     padding: 15px 10px;
     background-color: #003580;
     border-bottom: 1px solid white;
-    input {
+    input 
+    {
       color: white;
       display: block;
       background-color: #003580;
@@ -917,16 +1111,19 @@ body {
       margin: 0px auto;
     }
   }
-  div.st-version-picker {
+  div.st-version-picker 
+  {
     background-color: #003580;
     width: 100%;
     height: fit-content;
     float: left;
-    div.st-navigation {
+    div.st-navigation 
+    {
       max-width: 1100px;
       width: 100%;
       margin: 0px auto;
-      span {
+      span 
+      {
         display: block;
         padding: 15px 10px;
         width: fit-content;
@@ -939,23 +1136,27 @@ body {
       }
     }
   }
-  div.st-links {
+  div.st-links 
+  {
     width: 100%;
     max-width: 1100px;
     margin: 0px auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 10px;
-    ul {
+    ul 
+    {
       list-style-type: none;
       color: #0077cc;
       font-size: 13px;
-      li {
+      li 
+      {
         margin-bottom: 10px;
       }
     }
   }
-  p.st-support {
+  p.st-support 
+  {
     width: calc(100% - 16px);
     max-width: 1100px;
     margin: 0px auto;
@@ -963,34 +1164,35 @@ body {
     border-bottom: 1px solid #e9f0fa;
     padding: 11px 8px;
     font-size: 12px;
-    span {
+    span 
+    {
       color: #0077cc;
       font-weight: 700;
     }
   }
-  p.st-ekstranet
+  p.st-ekstranet 
   {
     text-align: center;
     margin: 54px 0 0;
-    font-size:14px;
+    font-size: 14px;
     font-weight: 700;
-    color:#0077cc;
+    color: #0077cc;
   }
-  p.st-copyrights
+  p.st-copyrights 
   {
-    font-size:10px;
+    font-size: 10px;
     max-width: 1100px;
-    text-align:left;
-    margin:40px auto 0;
+    text-align: left;
+    margin: 40px auto 0;
   }
   p.st-about-us
   {
-    text-align:center;
-    color:#838383;
+    text-align: center;
+    color: #838383;
     font-size: 12px;
-    margin-top:28px;
+    margin-top: 28px;
   }
-  div.st-partners
+  div.st-partners 
   {
     width: calc(100% - 30px);
     max-width: 1100px;
@@ -999,10 +1201,9 @@ body {
     padding: 0px 15px;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: auto;
-    @include break-point(750px)
+    @include break-point(750px) 
     {
-      
-    grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
