@@ -130,33 +130,34 @@ body div.st-search {
   height: -moz-fit-content;
   height: fit-content;
   min-height: 260px;
-  background-color: #f7f7f7;
+  background-color: #F7F7F7;
   margin: 0px;
+}
+
+body div.st-search p.st-important {
+  font-size: 24px;
+  margin: 0 auto;
+  max-width: 1100px;
+  font-weight: 600;
+}
+
+body div.st-search p.st-description {
+  margin: 0 auto;
+  max-width: 1100px;
+  font-size: 14px;
 }
 
 body div.st-search div.st-search-content {
   padding: 44px 5px;
   margin: 0px auto;
   width: calc(100% - 10px);
-  border-collapse: separate;
   max-width: 1100px;
-}
-
-body div.st-search div.st-search-content p.st-important {
-  font-size: 24px;
-  margin: 0px;
-  font-weight: 600;
-}
-
-body div.st-search div.st-search-content p.st-description {
-  margin: 0px 0px 10px;
-  font-size: 14px;
 }
 
 body div.st-search div.st-search-content div.st-location {
   margin-top: 15px;
   position: relative;
-  width: 39%;
+  width: 35%;
   height: 52px;
   float: left;
   min-width: 190px;
@@ -183,7 +184,7 @@ body div.st-search div.st-search-content div.st-location i {
 body div.st-search div.st-search-content div.st-date {
   margin-top: 15px;
   position: relative;
-  width: 24%;
+  width: 28%;
   height: 52px;
   float: left;
   min-width: 235px;
@@ -192,9 +193,10 @@ body div.st-search div.st-search-content div.st-date {
 }
 
 body div.st-search div.st-search-content div.st-date input {
-  width: calc(100% - 60px);
+  width: calc(100% - 75px);
   height: 100%;
   padding-left: 60px;
+  padding-right: 15px;
   border: 4px solid #FEBB02;
   font-size: 14px;
 }
@@ -205,6 +207,10 @@ body div.st-search div.st-search-content div.st-date i {
   font-size: 25px;
   left: 24px;
   color: #BDBDBD;
+}
+
+body div.st-search div.st-search-content div.st-low-res-date {
+  display: none;
 }
 
 body div.st-search div.st-search-content div.st-count {
@@ -636,7 +642,8 @@ body div.st-accommodation div.st-sorts {
   height: 300px;
   grid-gap: 16px;
   float: left;
-  width: 100%;
+  width: calc(100% - 10px);
+  padding: 0 5px;
 }
 
 body div.st-accommodation div.st-sorts div.st-type img {
@@ -659,11 +666,13 @@ body div.st-accommodation div.st-sorts div.st-type p.st-ammount {
 
 body div.st-accommodation div.st-private-rooms p.st-title {
   font-size: 24px;
+  padding: 0 5px;
+  width: calc(100% - 10px);
 }
 
 body div.st-accommodation div.st-private-rooms div.st-offers {
   max-width: 1100px;
-  width: 100%;
+  width: calc(100% - 10px);
   height: 356px;
   display: -ms-grid;
   display: grid;
@@ -671,6 +680,7 @@ body div.st-accommodation div.st-private-rooms div.st-offers {
       grid-template-columns: repeat(4, 1fr);
   position: relative;
   grid-gap: 16px;
+  padding: 0 5px;
 }
 
 body div.st-accommodation div.st-private-rooms div.st-offers div {
@@ -765,12 +775,18 @@ body div.st-accommodation div.st-private-rooms div.st-offers div p.st-score span
 }
 
 body div.st-register {
-  width: calc(100% - 2px);
+  width: calc(100% - 12px);
   max-width: 1100px;
   margin: 24px auto 32px;
   border: 1px solid #e0e0e0;
   position: relative;
   height: 164px;
+}
+
+@media (max-width: 1100px) {
+  body div.st-register {
+    margin: 24px 5px 32px;
+  }
 }
 
 body div.st-register img {
@@ -925,6 +941,290 @@ body div.st-discover {
   font-size: 24px;
   font-weight: 700;
   max-width: 1100px;
-  margin: 60px auto;
+  position: relative;
+  margin: 60px auto 16px;
+}
+
+body div.st-page-picker {
+  height: 20px;
+  max-width: 1100px;
+  margin: 0px auto;
+}
+
+body div.st-page-picker span.st-unselected {
+  float: right;
+  font-size: 13px;
+  padding: 0 7px 2px;
+  background-color: #838383;
+  margin-left: 3px;
+  color: white;
+  font-weight: 400;
+}
+
+body div.st-page-picker span.st-selected {
+  float: right;
+  font-size: 13px;
+  padding: 0 7px 2px;
+  background-color: #0077cc;
+  margin-left: 3px;
+  color: white;
+  font-weight: 400;
+}
+
+body div.st-page-picker span.st-more {
+  float: right;
+  margin-left: 10px;
+  font-size: 13px;
+  text-decoration: underline;
+  color: #0077cc;
+}
+
+body div.st-things-holder {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body div.st-things-holder div.st-things-to-enjoy {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  min-width: 0px;
+  max-width: 1100px;
+  margin: 12px auto;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 14px;
+  position: relative;
+}
+
+body div.st-things-holder div {
+  min-width: 0px;
+  position: relative;
+}
+
+body div.st-things-holder div img {
+  width: 100%;
+}
+
+body div.st-things-holder div p.st-text {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: calc(100% - 30px);
+  font-size: 14px;
+  color: white;
+  top: 0px;
+  margin: 0px;
+  text-align: center;
+  padding: 0 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  z-index: 3;
+}
+
+body div.st-things-holder div p.st-text:hover {
+  border: 1px solid #eee;
+  padding: 2px;
+  white-space: normal;
+  word-break: break-word;
+  z-index: 5;
+  background-color: #eee;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body div.st-things-holder div p.st-text:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0 15px;
+}
+
+body div.st-things-holder div p.st-location-name {
+  font-size: 14px;
+  color: #0077cc;
+  text-align: center;
+  padding: 7px 0;
+  margin: 0 0 50px;
+}
+
+body div.st-footer-holder {
+  background-color: #001b42;
+  padding: 50px 0px;
+}
+
+body div.st-footer-holder div.st-footer {
+  color: white;
+  max-width: 1100px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+body div.st-footer-holder div.st-footer h2.st-title {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0px;
+  display: block;
+}
+
+body div.st-footer-holder div.st-footer p.st-subscribe {
+  font-size: 16px;
+  margin: 0 0 25px;
+}
+
+body div.st-footer-holder div.st-footer div.st-subscribe-holder {
+  width: 50%;
+  min-width: 435px;
+  margin: 0px auto;
+}
+
+body div.st-footer-holder div.st-footer div.st-subscribe-holder input.st-give-mail {
+  width: 65%;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 20px;
+  border-radius: 5px;
+  border: 0px;
+}
+
+body div.st-footer-holder div.st-footer div.st-subscribe-holder input.st-submit {
+  padding: 14.4px 24px;
+  font-size: 16px;
+  background-color: #0077cc;
+  border: 0px;
+  color: white;
+  line-height: 15px;
+  border-radius: 5px;
+}
+
+body div.st-footer-holder div.st-footer p.st-send-me {
+  margin: 0px;
+  width: 100%;
+}
+
+body div.st-add-object {
+  width: calc(100% - 20px);
+  padding: 15px 10px;
+  background-color: #003580;
+  border-bottom: 1px solid white;
+}
+
+body div.st-add-object input {
+  color: white;
+  display: block;
+  background-color: #003580;
+  border: 1px solid white;
+  border-radius: 5px;
+  line-height: 28px;
+  padding: 0 15px;
+  font-size: 13px;
+  margin: 0px auto;
+}
+
+body div.st-version-picker {
+  background-color: #003580;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  float: left;
+}
+
+body div.st-version-picker div.st-navigation {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+body div.st-version-picker div.st-navigation span {
+  display: block;
+  padding: 15px 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  float: left;
+  text-decoration: underline;
+  font-size: 13px;
+  color: white;
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+body div.st-links {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+body div.st-links ul {
+  list-style-type: none;
+  color: #0077cc;
+  font-size: 13px;
+}
+
+body div.st-links ul li {
+  margin-bottom: 10px;
+}
+
+body p.st-support {
+  width: calc(100% - 16px);
+  max-width: 1100px;
+  margin: 0px auto;
+  border-top: 1px solid #e9f0fa;
+  border-bottom: 1px solid #e9f0fa;
+  padding: 11px 8px;
+  font-size: 12px;
+}
+
+body p.st-support span {
+  color: #0077cc;
+  font-weight: 700;
+}
+
+body p.st-ekstranet {
+  text-align: center;
+  margin: 54px 0 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0077cc;
+}
+
+body p.st-copyrights {
+  font-size: 10px;
+  max-width: 1100px;
+  text-align: left;
+  margin: 40px auto 0;
+}
+
+body p.st-about-us {
+  text-align: center;
+  color: #838383;
+  font-size: 12px;
+  margin-top: 28px;
+}
+
+body div.st-partners {
+  width: calc(100% - 30px);
+  max-width: 1100px;
+  margin: 0px auto;
+  display: -ms-grid;
+  display: grid;
+  padding: 0px 15px;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  grid-gap: auto;
+}
+
+@media (max-width: 750px) {
+  body div.st-partners {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
 }
 /*# sourceMappingURL=styles.css.map */
