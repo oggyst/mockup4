@@ -847,6 +847,7 @@ body div.st-register {
   border: 1px solid #e0e0e0;
   position: relative;
   height: 164px;
+  min-width: 595px;
 }
 
 @media (max-width: 1100px) {

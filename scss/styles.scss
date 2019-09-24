@@ -789,6 +789,7 @@ body
     border: 1px solid $border-gray;
     position: relative;
     height: 164px;
+    min-width:595px;
     @include break-point(1100px) 
     {
       margin: 24px 5px 32px;
