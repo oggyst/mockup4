@@ -433,7 +433,7 @@ body div.st-images div.st-image-holder {
 
 body div.st-images div.st-image-holder div.st-first {
   width: calc(50% - 10px);
-  background: url(/img/peterburg.jpg);
+  background: url(../img/peterburg.jpg);
   margin-right: 10px;
   height: 340px;
   float: left;
@@ -538,7 +538,7 @@ body div.st-images div.st-image-holder div.st-second {
   margin-left: 10px;
   border-radius: 3px;
   height: 340px;
-  background: url(/img/moskva.png);
+  background: url(../img/moskva.png);
 }
 
 body div.st-images div.st-image-holder div.st-second img.st-icon {
@@ -676,15 +676,15 @@ body div.st-images div.st-second-row div.st-image i {
 }
 
 body div.st-images div.st-second-row div.st-first {
-  background: url(/img/kiev.jpg);
+  background: url(../img/kiev.jpg);
 }
 
 body div.st-images div.st-second-row div.st-second {
-  background: url(/img/riga.jpg);
+  background: url(../img/riga.jpg);
 }
 
 body div.st-images div.st-second-row div.st-third {
-  background: url(/img/helsinki.jpg);
+  background: url(../img/helsinki.jpg);
 }
 
 body div.st-accommodation {
@@ -714,23 +714,23 @@ body div.st-accommodation div.st-sorts {
 }
 
 body div.st-accommodation div.st-sorts div.st-apartments {
-  background-image: url(/img/apartments.png);
+  background-image: url(../img/apartments.png);
 }
 
 body div.st-accommodation div.st-sorts div.st-resorts {
-  background-image: url(/img/resorts.png);
+  background-image: url(../img/resorts.png);
 }
 
 body div.st-accommodation div.st-sorts div.st-villas {
-  background-image: url(/img/villas.png);
+  background-image: url(../img/villas.png);
 }
 
 body div.st-accommodation div.st-sorts div.st-cabins {
-  background-image: url(/img/cabins.png);
+  background-image: url(../img/cabins.png);
 }
 
 body div.st-accommodation div.st-sorts div.st-cottages {
-  background-image: url(/img/cottages.jpg);
+  background-image: url(../img/cottages.jpg);
 }
 
 body div.st-accommodation div.st-sorts div.st-type {
@@ -772,19 +772,19 @@ body div.st-accommodation div.st-private-rooms div.st-offers {
 }
 
 body div.st-accommodation div.st-private-rooms div.st-offers div.st-domina {
-  background-image: url(/img/domina.png);
+  background-image: url(../img/domina.png);
 }
 
 body div.st-accommodation div.st-private-rooms div.st-offers div.st-annabel {
-  background-image: url(/img/annabel.png);
+  background-image: url(../img/annabel.png);
 }
 
 body div.st-accommodation div.st-private-rooms div.st-offers div.st-elegant {
-  background-image: url(/img/elegant.png);
+  background-image: url(../img/elegant.png);
 }
 
 body div.st-accommodation div.st-private-rooms div.st-offers div.st-belinskogo {
-  background-image: url(/img/belinskogo.png);
+  background-image: url(../img/belinskogo.png);
 }
 
 body div.st-accommodation div.st-private-rooms div.st-offers div {
@@ -1058,7 +1058,7 @@ body div.st-page-picker {
 body div.st-page-picker span.st-unselected {
   float: right;
   font-size: 13px;
-  padding: 0 7px 2px;
+  padding: 2px 7px 2px;
   background-color: #838383;
   margin-left: 3px;
   color: white;
@@ -1068,7 +1068,7 @@ body div.st-page-picker span.st-unselected {
 body div.st-page-picker span.st-selected {
   float: right;
   font-size: 13px;
-  padding: 0 7px 2px;
+  padding: 2px 7px 2px;
   background-color: #0077cc;
   margin-left: 3px;
   color: white;

@@ -390,7 +390,7 @@ body
       div.st-first 
       {
         width: calc(50% - 10px);
-        background: url(/img/peterburg.jpg);
+        background: url(../img/peterburg.jpg);
         margin-right: 10px;
         height: 340px;
         float: left;
@@ -494,7 +494,7 @@ body
         margin-left: 10px;
         border-radius: 3px;
         height: 340px;
-        background: url(/img/moskva.png);
+        background: url(../img/moskva.png);
         img.st-icon 
         {
           width: 28px;
@@ -630,15 +630,15 @@ body
       }
       div.st-first 
       {
-        background: url(/img/kiev.jpg);
+        background: url(../img/kiev.jpg);
       }
       div.st-second 
       {
-        background: url(/img/riga.jpg);
+        background: url(../img/riga.jpg);
       }
       div.st-third 
       {
-        background: url(/img/helsinki.jpg);
+        background: url(../img/helsinki.jpg);
       }
     }
   }
@@ -667,23 +667,23 @@ body
       div.st-apartments
       {
         
-        background-image: url(/img/apartments.png);
+        background-image: url(../img/apartments.png);
       }
       div.st-resorts
       {
-        background-image: url(/img/resorts.png);
+        background-image: url(../img/resorts.png);
       }
       div.st-villas
       {
-        background-image: url(/img/villas.png);
+        background-image: url(../img/villas.png);
       }
       div.st-cabins
       {
-        background-image: url(/img/cabins.png);
+        background-image: url(../img/cabins.png);
       }
       div.st-cottages
       {
-        background-image: url(/img/cottages.jpg);
+        background-image: url(../img/cottages.jpg);
       }
       div.st-type 
       {
@@ -725,19 +725,19 @@ body
         padding: 0 5px;
         div.st-domina
         {
-          background-image: url(/img/domina.png);
+          background-image: url(../img/domina.png);
         }
         div.st-annabel
         {
-          background-image: url(/img/annabel.png);
+          background-image: url(../img/annabel.png);
         }
         div.st-elegant
         {
-          background-image: url(/img/elegant.png);
+          background-image: url(../img/elegant.png);
         }
         div.st-belinskogo
         {
-          background-image: url(/img/belinskogo.png);
+          background-image: url(../img/belinskogo.png);
         }
         div
         {
@@ -997,7 +997,7 @@ body
     {
       float: right;
       font-size: 13px;
-      padding: 0 7px 2px;
+      padding: 2px 7px 2px;
       background-color: #838383;
       margin-left: 3px;
       color: white;
@@ -1007,7 +1007,7 @@ body
     {
       float: right;
       font-size: 13px;
-      padding: 0 7px 2px;
+      padding: 2px 7px 2px;
       background-color: #0077cc;
       margin-left: 3px;
       color: white;
