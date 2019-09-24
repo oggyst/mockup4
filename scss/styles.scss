@@ -686,15 +686,8 @@ body
       }
       div.st-type 
       {
-        
         background-repeat: no-repeat;
         background-size: auto 205px;
-        img 
-        {
-          height: 207px;
-          width: 100%;
-          border-radius: 5px;
-        }
         p.st-type 
         {
           font-size: 16px;
@@ -727,20 +720,32 @@ body
         position: relative;
         grid-gap: 16px;
         padding: 0 5px;
+        div.st-domina
+        {
+          background-image: url(/img/domina.png);
+        }
+        div.st-annabel
+        {
+          background-image: url(/img/annabel.png);
+        }
+        div.st-elegant
+        {
+          background-image: url(/img/elegant.png);
+        }
+        div.st-belinskogo
+        {
+          background-image: url(/img/belinskogo.png);
+        }
         div
         {
+          background-repeat: no-repeat;
+          background-size: auto 240px;
           position: relative;
           min-width: 0;
-
-          img 
-          {
-            max-width: 100%;
-            height: 240px;
-          }
           p.st-name 
           {
             color: $text-gray;
-            margin: 8px 0 0 0;
+            margin: 247px 0 0 0;
             max-width: 100%;
             font-size: 14px;
             position: absolute;

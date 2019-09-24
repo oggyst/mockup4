@@ -737,12 +737,6 @@ body div.st-accommodation div.st-sorts div.st-type {
   background-size: auto 205px;
 }
 
-body div.st-accommodation div.st-sorts div.st-type img {
-  height: 207px;
-  width: 100%;
-  border-radius: 5px;
-}
-
 body div.st-accommodation div.st-sorts div.st-type p.st-type {
   font-size: 16px;
   font-weight: 700;
@@ -774,19 +768,32 @@ body div.st-accommodation div.st-private-rooms div.st-offers {
   padding: 0 5px;
 }
 
+body div.st-accommodation div.st-private-rooms div.st-offers div.st-domina {
+  background-image: url(/img/domina.png);
+}
+
+body div.st-accommodation div.st-private-rooms div.st-offers div.st-annabel {
+  background-image: url(/img/annabel.png);
+}
+
+body div.st-accommodation div.st-private-rooms div.st-offers div.st-elegant {
+  background-image: url(/img/elegant.png);
+}
+
+body div.st-accommodation div.st-private-rooms div.st-offers div.st-belinskogo {
+  background-image: url(/img/belinskogo.png);
+}
+
 body div.st-accommodation div.st-private-rooms div.st-offers div {
+  background-repeat: no-repeat;
+  background-size: auto 240px;
   position: relative;
   min-width: 0;
 }
 
-body div.st-accommodation div.st-private-rooms div.st-offers div img {
-  max-width: 100%;
-  height: 240px;
-}
-
 body div.st-accommodation div.st-private-rooms div.st-offers div p.st-name {
   color: #383838;
-  margin: 8px 0 0 0;
+  margin: 247px 0 0 0;
   max-width: 100%;
   font-size: 14px;
   position: absolute;
