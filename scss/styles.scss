@@ -663,8 +663,32 @@ body
       float: left;
       width: calc(100% - 10px);
       padding: 0 5px;
+      div.st-apartments
+      {
+        
+        background-image: url(/img/apartments.png);
+      }
+      div.st-resorts
+      {
+        background-image: url(/img/resorts.png);
+      }
+      div.st-villas
+      {
+        background-image: url(/img/villas.png);
+      }
+      div.st-cabins
+      {
+        background-image: url(/img/cabins.png);
+      }
+      div.st-cottages
+      {
+        background-image: url(/img/cottages.jpg);
+      }
       div.st-type 
       {
+        
+        background-repeat: no-repeat;
+        background-size: auto 205px;
         img 
         {
           height: 207px;
@@ -675,7 +699,7 @@ body
         {
           font-size: 16px;
           font-weight: 700;
-          margin: 16px 0 0;
+          margin: 221px 0 0;
         }
         p.st-ammount 
         {
@@ -789,6 +813,7 @@ body
     border: 1px solid $border-gray;
     position: relative;
     height: 164px;
+    min-width:595px;
     @include break-point(1100px) 
     {
       margin: 24px 5px 32px;
