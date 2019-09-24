@@ -117,6 +117,7 @@ body
     min-height: 260px;
     background-color: #f7f7f7;
     margin: 0px;
+    padding-top:45px;
     @include break-point(1030px) 
     {
       height: 410px;
@@ -393,7 +394,7 @@ body
         margin-right: 10px;
         height: 340px;
         float: left;
-        border-radius: 5px;
+        border-radius: 3px;
 
         p.st-title 
         {
@@ -491,14 +492,14 @@ body
         float: left;
         width: calc(50% - 10px);
         margin-left: 10px;
-        border-radius: 5px;
+        border-radius: 3px;
         height: 340px;
         background: url(/img/moskva.png);
         img.st-icon 
         {
           width: 28px;
           height: 28px;
-          border-top-left-radius: 5px;
+          border-top-left-radius: 3px;
         }
         p.st-title 
         {
@@ -569,12 +570,12 @@ body
       div.st-image 
       {
         position: relative;
-        border-radius: 5px;
+        border-radius: 3px;
         img.st-icon 
         {
           width: 28px;
           height: 28px;
-          border-top-left-radius: 5px;
+          border-top-left-radius: 3px;
         }
         p.st-title 
         {
@@ -687,6 +688,8 @@ body
       div.st-type 
       {
         background-repeat: no-repeat;
+        border-radius: 3px;
+        height:205px;
         background-size: auto 205px;
         p.st-type 
         {
@@ -738,6 +741,8 @@ body
         }
         div
         {
+          border-radius: 3px;
+          height:240px;
           background-repeat: no-repeat;
           background-size: auto 240px;
           position: relative;
@@ -1101,7 +1106,7 @@ body
           padding: 10px;
           font-size: 20px;
           line-height: 20px;
-          border-radius: 5px;
+          border-radius: 3px;
           border: 0px;
         }
         input.st-submit 
@@ -1112,7 +1117,7 @@ body
           border: 0px;
           color: white;
           line-height: 15px;
-          border-radius: 5px;
+          border-radius: 3px;
         }
       }
       p.st-send-me 
@@ -1134,7 +1139,7 @@ body
       display: block;
       background-color: #003580;
       border: 1px solid white;
-      border-radius: 5px;
+      border-radius: 3px;
       line-height: 28px;
       padding: 0 15px;
       font-size: 13px;

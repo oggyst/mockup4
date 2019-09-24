@@ -131,6 +131,7 @@ body div.st-search {
   min-height: 260px;
   background-color: #f7f7f7;
   margin: 0px;
+  padding-top: 45px;
 }
 
 @media (max-width: 1030px) {
@@ -436,7 +437,7 @@ body div.st-images div.st-image-holder div.st-first {
   margin-right: 10px;
   height: 340px;
   float: left;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 body div.st-images div.st-image-holder div.st-first p.st-title {
@@ -535,7 +536,7 @@ body div.st-images div.st-image-holder div.st-second {
   float: left;
   width: calc(50% - 10px);
   margin-left: 10px;
-  border-radius: 5px;
+  border-radius: 3px;
   height: 340px;
   background: url(/img/moskva.png);
 }
@@ -543,7 +544,7 @@ body div.st-images div.st-image-holder div.st-second {
 body div.st-images div.st-image-holder div.st-second img.st-icon {
   width: 28px;
   height: 28px;
-  border-top-left-radius: 5px;
+  border-top-left-radius: 3px;
 }
 
 body div.st-images div.st-image-holder div.st-second p.st-title {
@@ -615,13 +616,13 @@ body div.st-images div.st-second-row {
 
 body div.st-images div.st-second-row div.st-image {
   position: relative;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 body div.st-images div.st-second-row div.st-image img.st-icon {
   width: 28px;
   height: 28px;
-  border-top-left-radius: 5px;
+  border-top-left-radius: 3px;
 }
 
 body div.st-images div.st-second-row div.st-image p.st-title {
@@ -734,6 +735,8 @@ body div.st-accommodation div.st-sorts div.st-cottages {
 
 body div.st-accommodation div.st-sorts div.st-type {
   background-repeat: no-repeat;
+  border-radius: 3px;
+  height: 205px;
   background-size: auto 205px;
 }
 
@@ -785,6 +788,8 @@ body div.st-accommodation div.st-private-rooms div.st-offers div.st-belinskogo {
 }
 
 body div.st-accommodation div.st-private-rooms div.st-offers div {
+  border-radius: 3px;
+  height: 240px;
   background-repeat: no-repeat;
   background-size: auto 240px;
   position: relative;
@@ -1183,7 +1188,7 @@ body div.st-footer-holder div.st-footer div.st-subscribe-holder input.st-give-ma
   padding: 10px;
   font-size: 20px;
   line-height: 20px;
-  border-radius: 5px;
+  border-radius: 3px;
   border: 0px;
 }
 
@@ -1194,7 +1199,7 @@ body div.st-footer-holder div.st-footer div.st-subscribe-holder input.st-submit 
   border: 0px;
   color: white;
   line-height: 15px;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 body div.st-footer-holder div.st-footer p.st-send-me {
@@ -1214,7 +1219,7 @@ body div.st-add-object input {
   display: block;
   background-color: #003580;
   border: 1px solid white;
-  border-radius: 5px;
+  border-radius: 3px;
   line-height: 28px;
   padding: 0 15px;
   font-size: 13px;
