@@ -19,15 +19,4 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  z-index:3;
-  &:hover
-  {
-    border: 1px solid #eee;
-    padding:2px;
-    white-space: normal;
-    word-break: break-word;
-    z-index:5;
-    background-color:#eee;
-    height:fit-content;
-  }
 }

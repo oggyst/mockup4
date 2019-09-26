@@ -20,6 +20,7 @@ body
       {
         width: 150px;
         height: 25px;
+        margin-left:7px;
         @include vertical-center();
       }
       input.st-button 
@@ -33,7 +34,12 @@ body
         float: right;
         font-size: 12px;
         padding: 0px 13px;
+        font-weight: 700;
         @include vertical-center();
+        &:hover
+        {
+          cursor: pointer;
+        }
       }
       input.st-sign 
       {
@@ -43,8 +49,8 @@ body
       {
         margin-right: 15px;
         padding: 0px 10px;
-        font-weight: 700;
       }
+      
       input.st-import 
       {
         float: right;
@@ -57,6 +63,10 @@ body
         font-size: 12px;
         padding: 8px 11px;
         font-weight: 700;
+        &:hover
+        {
+          cursor: pointer;
+        }
         @include break-point(650px) 
         {
           display: none;
@@ -68,6 +78,10 @@ body
         margin-right: 26px;
         @include vertical-center();
         height: 18px;
+        &:hover
+        {
+          cursor: pointer;
+        }
       }
       span.st-currency
       {
@@ -77,20 +91,42 @@ body
         float: right;
         font-weight: 700;
         @include vertical-center();
+        &:hover
+        {
+          cursor: pointer;
+        }
       }
     }
     div.st-bottom 
     {
       max-width: 1110px;
-      margin: 0px auto;
       min-height: 60px;
+      display:grid;
+      grid-template-columns: repeat(5, 1fr);
+      line-height: 15px;
       span.st-unselected 
       {
-        color: #838383;
+        color: #ffffff;
+        opacity: .8;
+        word-break: normal;
+        line-height: 15px;
+        &:hover
+        {
+          opacity:1;
+          cursor: pointer;;
+        }
       }
-      span.st-selected 
+      p.st-selected 
       {
         border-bottom: 2px solid white;
+        &:hover
+        {
+          cursor: no-drop;
+        }
+      }
+      span 
+      {
+        height: 100%;
       }
       span 
       {
@@ -102,13 +138,14 @@ body
         min-height: 56px;
         padding: auto;
 
-        i 
+        
+      }
+      i 
         {
           font-size: 25px;
           margin-right: 5px;
           color: white;
         }
-      }
     }
   }
   div.st-search 
@@ -137,21 +174,22 @@ body
     }
     div.st-search-content 
     {
-      padding: 44px 5px;
+      padding: 4px;
+      height: 61px;
       margin: 0px auto;
       width: calc(100% - 10px);
       max-width: 1100px;
-
+      background-color: #febb02;
+      display: grid;
+      grid-template-columns: 35% 28% 26% 11%;
+      grid-gap:5px;
       div.st-location 
       {
-        margin-top: 15px;
         position: relative;
-        width: 35%;
         height: 52px;
         float: left;
         min-width: 190px;
-        margin-top: 0px;
-        margin-bottom: 10px;
+        margin:-3px 0 0 0;
         @include break-point(1030px) 
         {
           width: calc(100% - 5px);
@@ -160,8 +198,17 @@ body
           width: calc(100% - 63px);
           height: 100%;
           padding-left: 60px;
-          border: 4px solid #febb02;
+          margin: 4px;
           font-size: 14px;
+          &:hover
+          {
+            cursor: pointer;
+            outline: 1px solid red;
+          }
+          &:focus
+          {
+            outline: none;
+          }
         }
         i 
         {
@@ -174,14 +221,11 @@ body
       }
       div.st-date 
       {
-        margin-top: 15px;
         position: relative;
-        width: 28%;
         height: 52px;
         float: left;
         min-width: 235px;
-        margin: 0px;
-        margin-bottom: 10px;
+        margin:-3px 0 0 0;
 
         @include break-point(1030px) 
         {
@@ -193,9 +237,12 @@ body
           width: calc(100% - 63px);
           height: 100%;
           padding-left: 60px;
-          padding-right: 15px;
-          border: 4px solid #febb02;
+          margin: 4px;
           font-size: 14px;
+          &:hover
+          {
+            cursor: pointer;
+          }
         }
         i 
         {
@@ -229,8 +276,12 @@ body
             padding-left: 60px;
             padding-right: 15px;
             float: left;
-            border: 4px solid #febb02;
+            margin: 4px;
             font-size: 14px;
+            &:hover
+            {
+              cursor: pointer;
+            }
           }
           i 
           {
@@ -244,14 +295,16 @@ body
       }
       div.st-count 
       {
-        margin-top: 15px;
         position: relative;
         width: 26%;
         height: 52px;
         float: left;
         min-width: 270px;
-        margin: 0px;
-        margin-bottom: 10px;
+        margin:-3px 0 0 0;
+        &:hover
+        {
+          cursor: pointer;
+        }
         @include break-point(1030px) 
         {
           width: 100%;
@@ -262,8 +315,12 @@ body
           width: calc(100% - 60px);
           height: 100%;
           padding-left: 60px;
-          border: 4px solid #febb02;
+          margin: 4px;
           font-size: 14px;
+          &:hover
+          {
+            cursor: pointer;
+          }
           @include break-point(1030px) 
           {
             width: calc(100% - 68px);
@@ -279,21 +336,24 @@ body
       }
       div.st-search-btn 
       {
-        margin: 0px;
-        margin-bottom: 10px;
+        margin:-3px 0 0 0;
 
         input.st-input 
         {
-          width: 10%;
+          width: 100%;
           position: relative;
           float: left;
-          border: 4px solid #febb02;
-          height: 62px;
+          height: 59px;
           font-size: 20px;
+          padding:0px;
           color: white;
           background-color: #006bb8;
           min-width: 75px;
           overflow: hidden;
+          &:hover
+          {
+            cursor: pointer;
+          }
           @include break-point(1030px) 
           {
             width: 100%;
@@ -532,7 +592,7 @@ body
         {
           background-color: $black;
           margin: 0px;
-          width: 76px;
+          width: fit-content;
           font-size: 12px;
           position: absolute;
           right: 15px;
@@ -606,7 +666,7 @@ body
         {
           background-color: $black;
           margin: 0px;
-          width: 85px;
+          width: fit-content;
           font-size: 12px;
           position: absolute;
           right: 15px;

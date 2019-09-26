@@ -18,6 +18,7 @@ body div.st-header div.st-top {
 body div.st-header div.st-top img.st-logo {
   width: 150px;
   height: 25px;
+  margin-left: 7px;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -34,10 +35,15 @@ body div.st-header div.st-top input.st-button {
   float: right;
   font-size: 12px;
   padding: 0px 13px;
+  font-weight: 700;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+body div.st-header div.st-top input.st-button:hover {
+  cursor: pointer;
 }
 
 body div.st-header div.st-top input.st-sign {
@@ -47,7 +53,6 @@ body div.st-header div.st-top input.st-sign {
 body div.st-header div.st-top input.st-register {
   margin-right: 15px;
   padding: 0px 10px;
-  font-weight: 700;
 }
 
 body div.st-header div.st-top input.st-import {
@@ -66,6 +71,10 @@ body div.st-header div.st-top input.st-import {
   font-weight: 700;
 }
 
+body div.st-header div.st-top input.st-import:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 650px) {
   body div.st-header div.st-top input.st-import {
     display: none;
@@ -82,6 +91,10 @@ body div.st-header div.st-top img.st-flag {
   height: 18px;
 }
 
+body div.st-header div.st-top img.st-flag:hover {
+  cursor: pointer;
+}
+
 body div.st-header div.st-top span.st-currency {
   color: white;
   margin-right: 34px;
@@ -94,18 +107,42 @@ body div.st-header div.st-top span.st-currency {
   transform: translateY(-50%);
 }
 
+body div.st-header div.st-top span.st-currency:hover {
+  cursor: pointer;
+}
+
 body div.st-header div.st-bottom {
   max-width: 1110px;
-  margin: 0px auto;
   min-height: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  line-height: 15px;
 }
 
 body div.st-header div.st-bottom span.st-unselected {
-  color: #838383;
+  color: #ffffff;
+  opacity: .8;
+  word-break: normal;
+  line-height: 15px;
 }
 
-body div.st-header div.st-bottom span.st-selected {
+body div.st-header div.st-bottom span.st-unselected:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+body div.st-header div.st-bottom p.st-selected {
   border-bottom: 2px solid white;
+}
+
+body div.st-header div.st-bottom p.st-selected:hover {
+  cursor: no-drop;
+}
+
+body div.st-header div.st-bottom span {
+  height: 100%;
 }
 
 body div.st-header div.st-bottom span {
@@ -118,7 +155,7 @@ body div.st-header div.st-bottom span {
   padding: auto;
 }
 
-body div.st-header div.st-bottom span i {
+body div.st-header div.st-bottom i {
   font-size: 25px;
   margin-right: 5px;
   color: white;
@@ -154,21 +191,25 @@ body div.st-search p.st-description {
 }
 
 body div.st-search div.st-search-content {
-  padding: 44px 5px;
+  padding: 4px;
+  height: 61px;
   margin: 0px auto;
   width: calc(100% - 10px);
   max-width: 1100px;
+  background-color: #febb02;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 28% 26% 11%;
+      grid-template-columns: 35% 28% 26% 11%;
+  grid-gap: 5px;
 }
 
 body div.st-search div.st-search-content div.st-location {
-  margin-top: 15px;
   position: relative;
-  width: 35%;
   height: 52px;
   float: left;
   min-width: 190px;
-  margin-top: 0px;
-  margin-bottom: 10px;
+  margin: -3px 0 0 0;
 }
 
 @media (max-width: 1030px) {
@@ -181,8 +222,17 @@ body div.st-search div.st-search-content div.st-location input {
   width: calc(100% - 63px);
   height: 100%;
   padding-left: 60px;
-  border: 4px solid #febb02;
+  margin: 4px;
   font-size: 14px;
+}
+
+body div.st-search div.st-search-content div.st-location input:hover {
+  cursor: pointer;
+  outline: 1px solid red;
+}
+
+body div.st-search div.st-search-content div.st-location input:focus {
+  outline: none;
 }
 
 body div.st-search div.st-search-content div.st-location i {
@@ -194,14 +244,11 @@ body div.st-search div.st-search-content div.st-location i {
 }
 
 body div.st-search div.st-search-content div.st-date {
-  margin-top: 15px;
   position: relative;
-  width: 28%;
   height: 52px;
   float: left;
   min-width: 235px;
-  margin: 0px;
-  margin-bottom: 10px;
+  margin: -3px 0 0 0;
 }
 
 @media (max-width: 1030px) {
@@ -214,9 +261,12 @@ body div.st-search div.st-search-content div.st-date input {
   width: calc(100% - 63px);
   height: 100%;
   padding-left: 60px;
-  padding-right: 15px;
-  border: 4px solid #febb02;
+  margin: 4px;
   font-size: 14px;
+}
+
+body div.st-search div.st-search-content div.st-date input:hover {
+  cursor: pointer;
 }
 
 body div.st-search div.st-search-content div.st-date i {
@@ -250,8 +300,11 @@ body div.st-search div.st-search-content div.st-low-res-date {
     padding-left: 60px;
     padding-right: 15px;
     float: left;
-    border: 4px solid #febb02;
+    margin: 4px;
     font-size: 14px;
+  }
+  body div.st-search div.st-search-content div.st-low-res-date input:hover {
+    cursor: pointer;
   }
   body div.st-search div.st-search-content div.st-low-res-date i {
     position: absolute;
@@ -263,14 +316,16 @@ body div.st-search div.st-search-content div.st-low-res-date {
 }
 
 body div.st-search div.st-search-content div.st-count {
-  margin-top: 15px;
   position: relative;
   width: 26%;
   height: 52px;
   float: left;
   min-width: 270px;
-  margin: 0px;
-  margin-bottom: 10px;
+  margin: -3px 0 0 0;
+}
+
+body div.st-search div.st-search-content div.st-count:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 1030px) {
@@ -283,8 +338,12 @@ body div.st-search div.st-search-content div.st-count input {
   width: calc(100% - 60px);
   height: 100%;
   padding-left: 60px;
-  border: 4px solid #febb02;
+  margin: 4px;
   font-size: 14px;
+}
+
+body div.st-search div.st-search-content div.st-count input:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 1030px) {
@@ -302,21 +361,24 @@ body div.st-search div.st-search-content div.st-count i {
 }
 
 body div.st-search div.st-search-content div.st-search-btn {
-  margin: 0px;
-  margin-bottom: 10px;
+  margin: -3px 0 0 0;
 }
 
 body div.st-search div.st-search-content div.st-search-btn input.st-input {
-  width: 10%;
+  width: 100%;
   position: relative;
   float: left;
-  border: 4px solid #febb02;
-  height: 62px;
+  height: 59px;
   font-size: 20px;
+  padding: 0px;
   color: white;
   background-color: #006bb8;
   min-width: 75px;
   overflow: hidden;
+}
+
+body div.st-search div.st-search-content div.st-search-btn input.st-input:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 1030px) {
@@ -376,19 +438,6 @@ body div.st-special-offer p.st-description {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  z-index: 3;
-}
-
-body div.st-special-offer p.st-description:hover {
-  border: 1px solid #eee;
-  padding: 2px;
-  white-space: normal;
-  word-break: break-word;
-  z-index: 5;
-  background-color: #eee;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 body div.st-special-offer input {
@@ -577,7 +626,9 @@ body div.st-images div.st-image-holder div.st-second p.st-objects {
 body div.st-images div.st-image-holder div.st-second p.st-average-price {
   background-color: #383838;
   margin: 0px;
-  width: 76px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-size: 12px;
   position: absolute;
   right: 15px;
@@ -653,7 +704,9 @@ body div.st-images div.st-second-row div.st-image p.st-objects-number {
 body div.st-images div.st-second-row div.st-image p.st-price {
   background-color: #383838;
   margin: 0px;
-  width: 85px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-size: 12px;
   position: absolute;
   right: 15px;
@@ -805,19 +858,6 @@ body div.st-accommodation div.st-private-rooms div.st-offers div p.st-name {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  z-index: 3;
-}
-
-body div.st-accommodation div.st-private-rooms div.st-offers div p.st-name:hover {
-  border: 1px solid #eee;
-  padding: 2px;
-  white-space: normal;
-  word-break: break-word;
-  z-index: 5;
-  background-color: #eee;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 body div.st-accommodation div.st-private-rooms div.st-offers div p.st-location {
@@ -1125,19 +1165,6 @@ body div.st-things-holder div p.st-text {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  z-index: 3;
-}
-
-body div.st-things-holder div p.st-text:hover {
-  border: 1px solid #eee;
-  padding: 2px;
-  white-space: normal;
-  word-break: break-word;
-  z-index: 5;
-  background-color: #eee;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 body div.st-things-holder div p.st-text:hover {
