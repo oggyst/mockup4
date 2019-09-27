@@ -4,7 +4,7 @@
 body 
 {
   font-family:Helvetica, Arial, sans-serif;
-  min-width: 400px;
+  min-width: 600px;
   margin: 0;
   padding: 0 0 40px;
   div.st-header 
@@ -100,53 +100,67 @@ body
     div.st-bottom 
     {
       max-width: 1110px;
-      min-height: 60px;
       display:grid;
       grid-template-columns: repeat(5, 1fr);
       line-height: 15px;
-      span.st-unselected 
+      margin:0px auto;
+      text-align: left;
+      font-size:14px;
+      @include break-point (1100px)
       {
-        color: #ffffff;
-        opacity: .8;
-        word-break: normal;
-        line-height: 15px;
-        &:hover
+        width:calc(100% - 14px);
+        margin:0 7px;
+      }
+      @include break-point (725px)
+      {
+        font-size:12px;
+      }
+      div.st-icon-container
+      {
+        width: fit-content;
+        height:100%;
+        margin:0px;
+        float:left;
+      }
+        span.st-unselected 
         {
-          opacity:1;
-          cursor: pointer;;
+          color: #ffffff;
+          opacity: .8;
+          word-break: normal;
+          &:hover
+          {
+            opacity:1;
+            cursor: pointer;;
+          }
         }
-      }
-      p.st-selected 
-      {
-        border-bottom: 2px solid white;
-        &:hover
+        span.st-selected 
         {
-          cursor: no-drop;
+          width: fit-content;
+          height:22px;
+          border-bottom: 2px solid white;
+          &:hover
+          {
+            cursor: no-drop;
+          }
+          @include break-point(949px)
+          {
+            height: 26px;
+          }
         }
-      }
-      span 
-      {
-        height: 100%;
-      }
-      span 
-      {
-        color: white;
-        font-size: 13px;
-        line-height: 55px;
-        margin: 0 16px;
-        display: inline-block;
-        min-height: 56px;
-        padding: auto;
-
-        
-      }
-      i 
+        span 
         {
-          font-size: 25px;
-          margin-right: 5px;
           color: white;
+          margin: 0;
+          display: inline-block;
+          padding: 16px 0;
         }
-    }
+        i 
+          {
+            font-size: 25px;
+            margin-right: 5px;
+            color: white;
+          }
+      }
   }
   div.st-search 
   {
@@ -155,7 +169,8 @@ body
     background-color: #f7f7f7;
     margin: 0px;
     padding-top:45px;
-    @include break-point(1030px) 
+    border-bottom: 1px solid #EDEDED;
+    @include break-point(1080px) 
     {
       height: 410px;
     }
@@ -164,33 +179,51 @@ body
       font-size: 24px;
       margin: 0 auto;
       max-width: 1100px;
-      font-weight: 600;
+      font-weight: 600; 
+      @include break-point (1100px)
+      {
+        width:calc(100% - 14px);
+        margin:0 7px;
+      }
     }
     p.st-description 
     {
-      margin: 0 auto;
+      margin: 0 auto 15px;
       max-width: 1100px;
       font-size: 14px;
+      @include break-point (1100px)
+      {
+        width:calc(100% - 14px);
+        margin:0 7px 15px;
+      }
     }
+   
     div.st-search-content 
     {
       padding: 4px;
       height: 61px;
-      margin: 0px auto;
       width: calc(100% - 10px);
       max-width: 1100px;
       background-color: #febb02;
-      display: grid;
-      grid-template-columns: 35% 28% 26% 11%;
-      grid-gap:5px;
+      margin: 0 auto;
+      @include break-point (1100px)
+      {
+        width:calc(100% - 24px);
+        margin:0 7px;
+      }
+      @include break-point (1080px)
+      {
+        height:247px;
+      }
       div.st-location 
       {
         position: relative;
         height: 52px;
         float: left;
+        width:35%;
         min-width: 190px;
         margin:-3px 0 0 0;
-        @include break-point(1030px) 
+        @include break-point(1080px) 
         {
           width: calc(100% - 5px);
         }
@@ -203,7 +236,7 @@ body
           &:hover
           {
             cursor: pointer;
-            outline: 1px solid red;
+            outline: 1px solid #D59C00;
           }
           &:focus
           {
@@ -223,11 +256,12 @@ body
       {
         position: relative;
         height: 52px;
+        width:28%;
         float: left;
         min-width: 235px;
-        margin:-3px 0 0 0;
+        margin: -3px 4px 0 0;
 
-        @include break-point(1030px) 
+        @include break-point(1080px) 
         {
           display: none;
         }
@@ -242,6 +276,11 @@ body
           &:hover
           {
             cursor: pointer;
+            outline: 1px solid #D59C00;
+          }
+          &:focus
+          {
+            outline: none;
           }
         }
         i 
@@ -256,9 +295,10 @@ body
       div.st-low-res-date 
       {
         display: none;
-        @include break-point(1030px) 
+        @include break-point(1080px) 
         {
           width: 100%;
+          margin-top:9px;
           div 
           {
             position: relative;
@@ -281,6 +321,11 @@ body
             &:hover
             {
               cursor: pointer;
+              outline: 1px solid #D59C00;
+            }
+            &:focus
+            {
+              outline: none;
             }
           }
           i 
@@ -295,6 +340,7 @@ body
       }
       div.st-count 
       {
+        width:26%;
         position: relative;
         width: 26%;
         height: 52px;
@@ -305,7 +351,7 @@ body
         {
           cursor: pointer;
         }
-        @include break-point(1030px) 
+        @include break-point(1080px) 
         {
           width: 100%;
         }
@@ -320,8 +366,13 @@ body
           &:hover
           {
             cursor: pointer;
+            outline: 1px solid #D59C00;
           }
-          @include break-point(1030px) 
+          &:focus
+          {
+            outline: none;
+          }
+          @include break-point(1080px) 
           {
             width: calc(100% - 68px);
           }
@@ -336,14 +387,23 @@ body
       }
       div.st-search-btn 
       {
-        margin:-3px 0 0 0;
-
+        position: relative;
+        float:left;
+        width: calc(11% - 16px);
+        margin: 1px 0px 0 12px;
+        @include break-point(1080px) 
+        {
+          width: calc(100% - 4px);
+          margin: 14px 4px 0 4px;
+        }
         input.st-input 
         {
+          all:unset;
+          text-align: center;
           width: 100%;
           position: relative;
           float: left;
-          height: 59px;
+          height: 58px;
           font-size: 20px;
           padding:0px;
           color: white;
@@ -354,10 +414,7 @@ body
           {
             cursor: pointer;
           }
-          @include break-point(1030px) 
-          {
-            width: 100%;
-          }
+          
         }
       }
       div.st-bussiness 
@@ -366,13 +423,29 @@ body
         width: 100%;
         position: relative;
         margin-top: 15px;
-        input 
-        {
-          height: 20px;
-          width: 20px;
-        }
+        label.container {
+          left:-9px;
+          display: block;
+          position: relative;
+          float:left;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none; 
+          input
+          {
+            height: 20px;
+            width:20px;
+          }
+          span 
+          {
+            position: relative;
+            bottom:4px;
+          }
       }
     }
+  }
   }
   div.st-special-offer 
   {
@@ -421,6 +494,11 @@ body
       position: absolute;
       left: 138px;
       top: 89px;
+      &:hover
+      {
+        cursor: pointer;
+        background-color: #E5F0FF;
+      }
     }
     i 
     {
@@ -428,6 +506,12 @@ body
       right: 26px;
       top: 26px;
       font-size: 25px;
+      color:#707070;
+      opacity: .4;
+      &:hover
+      {
+        opacity:1;
+      }
     }
   }
   div.st-images 
@@ -1119,6 +1203,12 @@ body
         @include text-overflow();
         &:hover 
         {
+          border: 1px solid #eee;
+          white-space: normal;
+          text-align: center;
+          word-break: break-word;
+          z-index:5;
+          height:calc(100% - 86px);
           background-color: rgba(0, 0, 0, 0.3);
           padding: 0 15px;
         }
