@@ -143,12 +143,24 @@ body div.st-header div.st-bottom div.st-icon-container {
   height: 100%;
   margin: 0px;
   float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body div.st-header div.st-bottom span.st-unselected {
   color: #ffffff;
   opacity: .8;
   word-break: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body div.st-header div.st-bottom span.st-unselected:hover {
@@ -162,6 +174,12 @@ body div.st-header div.st-bottom span.st-selected {
   width: fit-content;
   height: 22px;
   border-bottom: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body div.st-header div.st-bottom span.st-selected:hover {
@@ -185,6 +203,10 @@ body div.st-header div.st-bottom i {
   font-size: 25px;
   margin-right: 5px;
   color: white;
+}
+
+body div.st-header div.st-bottom p {
+  margin: 0 10px;
 }
 
 body div.st-search {
@@ -582,12 +604,22 @@ body div.st-images div.st-image-holder {
 }
 
 body div.st-images div.st-image-holder div.st-first {
-  width: calc(50% - 10px);
+  width: calc(50% - 12px);
   background: url(../img/peterburg.jpg);
   margin-right: 10px;
   height: 340px;
   float: left;
+  border: 1px solid white;
   border-radius: 3px;
+}
+
+body div.st-images div.st-image-holder div.st-first:hover {
+  border-color: #febb02;
+}
+
+body div.st-images div.st-image-holder div.st-first:hover div.st-gradient {
+  height: 45%;
+  background-image: linear-gradient(rgba(0, 27, 65, 0.65) 0px, rgba(0, 27, 65, 0) 100%);
 }
 
 body div.st-images div.st-image-holder div.st-first p.st-title {
@@ -658,7 +690,8 @@ body div.st-images div.st-image-holder div.st-first div.st-suggestion {
 body div.st-images div.st-image-holder div.st-first div.st-suggestion p.st-date {
   margin: 0px;
   text-align: left;
-  color: blue;
+  color: #0077CC;
+  font-weight: 700;
   text-decoration: underline;
   min-width: 87px;
 }
@@ -672,7 +705,7 @@ body div.st-images div.st-image-holder div.st-first div.st-suggestion p.st-room 
 
 body div.st-images div.st-image-holder div.st-first div.st-suggestion i {
   text-align: right;
-  color: blue;
+  color: #0077CC;
 }
 
 body div.st-images div.st-image-holder div.st-first div.st-icon-holder {
@@ -680,6 +713,10 @@ body div.st-images div.st-image-holder div.st-first div.st-icon-holder {
   right: calc(50% + 20px);
   top: 10px;
   color: white;
+}
+
+body div.st-images div.st-image-holder div.st-first div.st-icon-holder:hover {
+  cursor: pointer;
 }
 
 body div.st-images div.st-image-holder div.st-second {
@@ -691,7 +728,18 @@ body div.st-images div.st-image-holder div.st-second {
   background: url(../img/moskva.png);
 }
 
+body div.st-images div.st-image-holder div.st-second:hover {
+  border-color: #febb02;
+}
+
+body div.st-images div.st-image-holder div.st-second:hover div.st-gradient {
+  height: 45%;
+  background-image: linear-gradient(rgba(0, 27, 65, 0.65) 0px, rgba(0, 27, 65, 0) 100%);
+}
+
 body div.st-images div.st-image-holder div.st-second img.st-icon {
+  position: absolute;
+  top: 0px;
   width: 28px;
   height: 28px;
   border-top-left-radius: 3px;
@@ -751,6 +799,10 @@ body div.st-images div.st-image-holder div.st-second div.st-icon-holder {
   top: 10px;
 }
 
+body div.st-images div.st-image-holder div.st-second div.st-icon-holder:hover {
+  cursor: pointer;
+}
+
 body div.st-images div.st-second-row {
   width: 100%;
   max-width: 1100px;
@@ -769,12 +821,28 @@ body div.st-images div.st-second-row {
 body div.st-images div.st-second-row div.st-image {
   position: relative;
   border-radius: 3px;
+  border: 1px solid white;
+}
+
+body div.st-images div.st-second-row div.st-image:hover {
+  border-color: #febb02;
+}
+
+body div.st-images div.st-second-row div.st-image:hover div.st-gradient {
+  height: 45%;
+  background-image: linear-gradient(rgba(0, 27, 65, 0.65) 0px, rgba(0, 27, 65, 0) 100%);
 }
 
 body div.st-images div.st-second-row div.st-image img.st-icon {
+  position: absolute;
+  top: 0px;
   width: 28px;
   height: 28px;
   border-top-left-radius: 3px;
+}
+
+body div.st-images div.st-second-row div.st-image i:hover {
+  cursor: pointer;
 }
 
 body div.st-images div.st-second-row div.st-image p.st-title {
@@ -894,6 +962,10 @@ body div.st-accommodation div.st-sorts div.st-type {
   background-size: auto 205px;
 }
 
+body div.st-accommodation div.st-sorts div.st-type:hover {
+  cursor: pointer;
+}
+
 body div.st-accommodation div.st-sorts div.st-type p.st-type {
   font-size: 16px;
   font-weight: 700;
@@ -950,6 +1022,10 @@ body div.st-accommodation div.st-private-rooms div.st-offers div {
   min-width: 0;
 }
 
+body div.st-accommodation div.st-private-rooms div.st-offers div:hover {
+  cursor: pointer;
+}
+
 body div.st-accommodation div.st-private-rooms div.st-offers div p.st-name {
   color: #383838;
   margin: 247px 0 0 0;
@@ -985,10 +1061,13 @@ body div.st-accommodation div.st-private-rooms div.st-offers div p.st-score {
 body div.st-accommodation div.st-private-rooms div.st-offers div p.st-score span.st-mark {
   background-color: #003580;
   color: white;
-  padding: 4px;
+  font-weight: 500;
   border-radius: 6px 6px 6px 0px;
   font-size: 14px;
+  width: 28px;
+  text-align: center;
   font-weight: 500;
+  padding: 6px 2px 6px 5px;
 }
 
 body div.st-accommodation div.st-private-rooms div.st-offers div p.st-score span.st-desc {
@@ -1085,10 +1164,15 @@ body div.st-popular-destination {
 
 body div.st-popular-destination div.st-location div.st-image {
   position: relative;
+  margin-bottom: 14px;
 }
 
 body div.st-popular-destination div.st-location div.st-image img {
   width: 100%;
+}
+
+body div.st-popular-destination div.st-location div.st-image img:hover {
+  cursor: pointer;
 }
 
 body div.st-popular-destination div.st-location div.st-image div.st-image-location {
@@ -1112,21 +1196,36 @@ body div.st-popular-destination div.st-location div.st-image div.st-image-locati
 }
 
 body div.st-popular-destination div.st-location p.st-available {
-  margin-top: 13px;
   text-decoration: underline;
   color: #0077cc;
   font-size: 14px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0px;
+}
+
+body div.st-popular-destination div.st-location p.st-available:hover {
+  cursor: pointer;
 }
 
 body p.st-more-destination {
   color: #0077cc;
   text-decoration: underline;
   max-width: 1100px;
-  width: 100%;
+  width: calc(100% - 5px);
   text-align: right;
   margin: 0px auto;
+  padding-right: 5px;
   font-weight: 700;
   font-size: 13px;
+}
+
+body p.st-more-destination:hover {
+  cursor: pointer;
+  color: #febb02;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
 }
 
 body div.st-favorite-destinations {
@@ -1147,10 +1246,17 @@ body div.st-favorite-destinations div.st-chosse-type {
   border-bottom: 1px solid #0077cc;
 }
 
+@media (max-width: 1120px) {
+  body div.st-favorite-destinations div.st-chosse-type {
+    width: calc(100% - 10px);
+    margin: 28px 5px 0;
+  }
+}
+
 body div.st-favorite-destinations span.st-selected {
   background-color: #0077cc;
   color: white;
-  padding: 7px 15px;
+  padding: 9px 15px;
   line-height: 30px;
   font-size: 13px;
 }
@@ -1165,16 +1271,22 @@ body div.st-favorite-destinations span.st-unselected {
 body div.st-favorite-destinations table.st-destinations {
   max-width: 1100px;
   margin: 0px auto;
-  width: 100%;
+  padding: 0 5px;
+  width: calc(100% - 10px);
 }
 
 body div.st-favorite-destinations table.st-destinations td {
   width: 20%;
+  padding-top: 8px;
 }
 
 body div.st-favorite-destinations table.st-destinations td span.st-name {
   color: #0077cc;
   font-size: 14px;
+}
+
+body div.st-favorite-destinations table.st-destinations td span.st-name:hover {
+  cursor: pointer;
 }
 
 body div.st-favorite-destinations table.st-destinations td span.st-number {
@@ -1196,6 +1308,12 @@ body div.st-page-picker {
   margin: 0px auto;
 }
 
+@media (max-width: 1110px) {
+  body div.st-page-picker {
+    margin: 0 5px;
+  }
+}
+
 body div.st-page-picker span.st-unselected {
   float: right;
   font-size: 13px;
@@ -1204,6 +1322,11 @@ body div.st-page-picker span.st-unselected {
   margin-left: 3px;
   color: white;
   font-weight: 400;
+}
+
+body div.st-page-picker span.st-unselected:hover {
+  background-color: #0077cc;
+  cursor: pointer;
 }
 
 body div.st-page-picker span.st-selected {
@@ -1222,6 +1345,10 @@ body div.st-page-picker span.st-more {
   font-size: 13px;
   text-decoration: underline;
   color: #0077cc;
+}
+
+body div.st-page-picker span.st-more:hover {
+  cursor: pointer;
 }
 
 body div.st-things-holder {
@@ -1284,7 +1411,14 @@ body div.st-things-holder div p.st-location-name {
   color: #0077cc;
   text-align: center;
   padding: 7px 0;
-  margin: 0 0 50px;
+  margin: 0 auto 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body div.st-things-holder div p.st-location-name:hover {
+  cursor: pointer;
 }
 
 body div.st-footer-holder {
@@ -1360,6 +1494,11 @@ body div.st-add-object input {
   margin: 0px auto;
 }
 
+body div.st-add-object input:hover {
+  background: #335D99;
+  color: #fff;
+}
+
 body div.st-version-picker {
   background-color: #003580;
   width: 100%;
@@ -1389,6 +1528,10 @@ body div.st-version-picker div.st-navigation span {
   font-weight: 700;
 }
 
+body div.st-version-picker div.st-navigation span:hover {
+  cursor: pointer;
+}
+
 body div.st-links {
   width: 100%;
   max-width: 1100px;
@@ -1398,16 +1541,27 @@ body div.st-links {
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
+  text-align: left;
 }
 
 body div.st-links ul {
   list-style-type: none;
   color: #0077cc;
   font-size: 13px;
+  -webkit-padding-start: 10px;
+          padding-inline-start: 10px;
 }
 
 body div.st-links ul li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: left;
   margin-bottom: 10px;
+}
+
+body div.st-links ul li:hover {
+  cursor: pointer;
 }
 
 body p.st-support {
@@ -1438,6 +1592,7 @@ body p.st-copyrights {
   max-width: 1100px;
   text-align: left;
   margin: 40px auto 0;
+  color: #383838;
 }
 
 body p.st-about-us {
