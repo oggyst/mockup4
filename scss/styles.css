@@ -43,6 +43,7 @@ body div.st-header div.st-top input.st-button {
 }
 
 body div.st-header div.st-top input.st-button:hover {
+  color: #07c;
   cursor: pointer;
 }
 
@@ -72,6 +73,7 @@ body div.st-header div.st-top input.st-import {
 }
 
 body div.st-header div.st-top input.st-import:hover {
+  background: #335D99;
   cursor: pointer;
 }
 
@@ -291,7 +293,7 @@ body div.st-search div.st-search-content div.st-location {
 }
 
 body div.st-search div.st-search-content div.st-location input {
-  width: calc(100% - 63px);
+  width: calc(100% - 66px);
   height: 100%;
   padding-left: 60px;
   margin: 4px;
@@ -1496,7 +1498,7 @@ body div.st-add-object input {
 
 body div.st-add-object input:hover {
   background: #335D99;
-  color: #fff;
+  cursor: pointer;
 }
 
 body div.st-version-picker {
@@ -1562,6 +1564,7 @@ body div.st-links ul li {
 
 body div.st-links ul li:hover {
   cursor: pointer;
+  color: #febb02;
 }
 
 body p.st-support {
@@ -1585,6 +1588,11 @@ body p.st-ekstranet {
   font-size: 14px;
   font-weight: 700;
   color: #0077cc;
+}
+
+body p.st-ekstranet:hover {
+  cursor: pointer;
+  color: #febb02;
 }
 
 body p.st-copyrights {
@@ -1612,6 +1620,8 @@ body div.st-partners {
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
   grid-gap: auto;
+  justify-items: center;
+  text-align: center;
 }
 
 @media (max-width: 750px) {
