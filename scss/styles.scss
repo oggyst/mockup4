@@ -20,8 +20,11 @@ body
       {
         width: 150px;
         height: 25px;
-        margin-left:7px;
         @include vertical-center();
+        @include break-point(1100px)
+        {
+          margin-left:7px;
+        }
       }
       input.st-button 
       {
@@ -855,6 +858,10 @@ body
       float: left;
       font-weight: 700;
       margin: 0px 0px 16px;
+      @include break-point(1100px)
+      {
+        margin-left:7px;
+      }
     }
     div.st-sorts 
     {
@@ -1295,6 +1302,7 @@ body
     {
       min-width: 0px;
       position: relative;
+     
       img 
       {
         width: 100%;
@@ -1321,6 +1329,7 @@ body
           height:calc(100% - 86px);
           background-color: rgba(0, 0, 0, 0.3);
           padding: 0 15px;
+          text-align: justify;
         }
       }
       p.st-location-name 
